@@ -25,5 +25,18 @@ Software mods - many from Andrew Ellis
   z_calibration.cfg
   Github autocommit
   
+Under consideration
+  Frame expansion compensation - https://github.com/alchemyEngine/klipper_frame_expansion_comp
+  LED strip lighting - held by these - https://www.thingiverse.com/thing:4933314/files
+  5.5 inch OLED display - https://voronregistry.com/mods/sttts-waveshare55inchhdmiamoledmount
+  Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
+  
+Test prints
+  Voron test cube
+  Andrew Ellis print tining guide and parts
+  Filament swatches - https://www.printables.com/model/27814
+  
+  
+  
   
   
