@@ -18,17 +18,20 @@ Third party (Etsy) printed parts in ASA to 2.4r1
 - Removeable front hinges - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors
 - Z chain guide mounted chamber thermistor - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Z_Chain_Guide_Thermistor_Mount
 - Deck support clips - https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Panel_Mounting/deck_support_4mm_x8.stl
-- Rear chamber camera mount with DFRobot USB 1080p camera
+- Rear chamber camera mount with DFRobot USB 1080p camera - https://3dmixers.com/m/181820-voron-24-camera-mount and https://core-electronics.com.au/raspberry-pi-wide-angle-camera-module-seeed-studio.html
 - Sturdy handles - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles
 - Z axis tension mod from Edward Yeeks
 - Matching skirts with power inlet and filter from Trident design - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet
 - Heating bed insulation
+- Raspberry Pi cooling fan - https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html
   
 ## Software mods - many from Andrew Ellis
 - lcd_tweaks.cfg
 - z_calibration.cfg using Klicky probe - https://github.com/protoloft/klipper_z_calibration#command-calibrate_z
 - Github autocommit
 - Mainsail timelapse.cfg
+- Fan control for Octopus - temperature controlled
+- Fan control for exhaust fan - keeps more stable chamber temp
 
 ## ToDo
 - Change Z mount - either stubby mount with nylock nuts (Andrew Ellis) or using spherical bearings - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
