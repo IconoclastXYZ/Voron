@@ -1,11 +1,11 @@
 # Voron
 Build details, tips, tricks and traps for the 2.4 r1 - r2
 
-Base build
-Formbot 3D kit - supplied to 2.4r1 specs but with
-  hall effect XY endstops
-  z endstop circuit board
-  Phaetus Dragon HF hotend
+#Base build
+##Formbot 3D kit - supplied to 2.4r1 specs but with
+-hall effect XY endstops
+-z endstop circuit board
+-Phaetus Dragon HF hotend
   
 Third party (Etsy) printed parts in ASA to 2.4r1
   
