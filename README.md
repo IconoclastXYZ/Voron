@@ -10,8 +10,16 @@ Build details, tips, tricks and traps for the 2.4 r1 - r2
 - Raspberry Pi 3B+ (1GB RAM)
 
 There were a few traps for young players in the Formbot 3D build, outlined [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/formbot_build.md)
-  
+
+## What to print?
 Third party (Etsy) printed parts in ASA to 2.4r1 with a few extra needed for the MGN12H rail
+
+Turns out that they sponaneously printed the new (r2) dine rail mounts for components, which is great
+
+Quite a few other parts from r2 can be printed for r1 kits and only improve them, eg. z-axis and ab-axis idlers, all the skirts, all electronics mounts
+
+## Things I wish I had known BEFORE starting to assemble the Voron
+Lots of others build lists and hints exist, with my particular blind spots / learning points listed here
   
 ## Physical mods
 - Klicky mod instead of Omron induction sensor - https://github.com/jlas1/Klicky-Probe
