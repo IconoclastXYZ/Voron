@@ -6,8 +6,12 @@ Build details, tips, tricks and traps for the 2.4 r1 - r2
 - hall effect XY endstops
 - z endstop circuit board
 - Phaetus Dragon HF hotend
+- Octopus 1.1
+- Raspberry Pi 3B+ (1GB RAM)
+
+There were a few traps for young players in the Formbot 3D build, outlined here
   
-Third party (Etsy) printed parts in ASA to 2.4r1
+Third party (Etsy) printed parts in ASA to 2.4r1 with a few extra needed for the MGN12H rail
   
 ## Physical mods
 - Klicky mod instead of Omron induction sensor - https://github.com/jlas1/Klicky-Probe
