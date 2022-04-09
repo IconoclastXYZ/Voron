@@ -28,6 +28,7 @@ Third party (Etsy) printed parts in ASA to 2.4r1
 - lcd_tweaks.cfg
 - z_calibration.cfg using Klicky probe - https://github.com/protoloft/klipper_z_calibration#command-calibrate_z
 - Github autocommit
+- Mainsail timelapse.cfg
 
 ## ToDo
 - Change Z mount - either stubby mount with nylock nuts (Andrew Ellis) or using spherical bearings - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
