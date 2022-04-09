@@ -13,7 +13,7 @@ Third party (Etsy) printed parts in ASA to 2.4r1
 - Klicky mod instead of Omron induction sensor - https://github.com/jlas1/Klicky-Probe
 - Purge bucket and brush
 - MGN12H single X rail with reprinted parts to suit
-- Polycarbonate twinwall (8mm) side and top panels (much better insulation than 3mm acrylic) - see below
+- Polycarbonate twinwall (8mm) side and top panels (much better insulation than 3mm acrylic) - details [here]( https://github.com/IconoclastXYZ/Voron/blob/main/articles/insulation.md)
 - Quick removable side / top panel latches - https://github.com/richardjm/voron-parts/tree/main/voron-2.4/FilamentLatch
 - Removeable front hinges - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors
 - Z chain guide mounted chamber thermistor - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Z_Chain_Guide_Thermistor_Mount
@@ -53,18 +53,6 @@ Third party (Etsy) printed parts in ASA to 2.4r1
 - Andrew Ellis print tining guide and parts
 - Filament swatches - https://www.printables.com/model/27814
 
-## Stats on insulation acrylic vs polycarbonate twinwall
-For U-values, lower is better
-
-### Twinwall polycarbonate sheet
-- 8mm - U-value 3.3
-- 10mm - U-value 2.9
-- Ref: https://vicwest.com/wp-content/uploads/2019/07/SUNLITE_En_Technical_Guide_61353_Web_1.pdf
-
-### Perspex / acrylic
-- 3mm - U-value 5.2
-- 5mm - U-value 4.9
-- Ref: https://www.allplastics.com.au/component/docman/doc_download/93-allplastics-perspex-datasheet-for-glazing-pdf?Itemid=
 
   
   
