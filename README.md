@@ -9,7 +9,7 @@ Build details, tips, tricks and traps for the 2.4 r1 - r2
 - Octopus 1.1
 - Raspberry Pi 3B+ (1GB RAM)
 
-There were a few traps for young players in the Formbot 3D build, outlined here
+There were a few traps for young players in the Formbot 3D build, outlined [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/formbot_build.md)
   
 Third party (Etsy) printed parts in ASA to 2.4r1 with a few extra needed for the MGN12H rail
   
