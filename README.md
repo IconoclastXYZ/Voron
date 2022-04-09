@@ -13,7 +13,7 @@ Third party (Etsy) printed parts in ASA to 2.4r1
 - Klicky mod instead of Omron induction sensor - https://github.com/jlas1/Klicky-Probe
 - Purge bucket and brush
 - MGN12H single X rail with reprinted parts to suit
-- Polycarbonate twinwall (8mm) side and top panels (much better insulation than 3mm acrylic)
+- Polycarbonate twinwall (8mm) side and top panels (much better insulation than 3mm acrylic) - see below
 - Quick removable side / top panel latches - https://github.com/richardjm/voron-parts/tree/main/voron-2.4/FilamentLatch
 - Removeable front hinges - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors
 - Z chain guide mounted chamber thermistor - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Z_Chain_Guide_Thermistor_Mount
@@ -36,6 +36,8 @@ Third party (Etsy) printed parts in ASA to 2.4r1
 ## Under consideration
 - Frame expansion compensation - https://github.com/alchemyEngine/klipper_frame_expansion_comp
 - LED strip lighting - held by these - https://www.thingiverse.com/thing:4933314/files
+- With cable cover for top end of Z belts - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide
+- And able cover for the bottom of the z belt - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
 - 5.5 inch OLED display - https://voronregistry.com/mods/sttts-waveshare55inchhdmiamoledmount
 - Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
 - Wago clip mounts to improve wiring
