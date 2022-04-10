@@ -19,7 +19,7 @@ Turns out that they sponaneously printed the new (r2) dine rail mounts for compo
 Quite a few other parts from r2 can be printed for r1 kits and only improve them, eg. z-axis and ab-axis idlers, all the skirts, all electronics mounts
 
 ## Things I wish I had known BEFORE starting to assemble the Voron
-Lots of others build lists and hints exist, with my particular blind spots / learning points listed here
+Lots of others build lists and hints exist, with my particular blind spots / learning points listed [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/build_lessons.md)
   
 ## Physical mods
 - Klicky mod instead of Omron induction sensor - https://github.com/jlas1/Klicky-Probe
