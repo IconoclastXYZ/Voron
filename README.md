@@ -36,6 +36,10 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Matching skirts with power inlet and filter from Trident design - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet
 - Heating bed insulation
 - Raspberry Pi cooling fan - https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html
+- LED strip lighting - held by these - https://www.thingiverse.com/thing:4933314/files
+- With cable cover for top end of Z belts - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide
+- And able cover for the bottom of the z belt - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
+- Better cooling head, ABBN 30 - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Badnoob/AB-BN 
   
 ## Software mods - many from Andrew Ellis
 - lcd_tweaks.cfg
@@ -51,14 +55,11 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   
 ## Under consideration
 - Frame expansion compensation - https://github.com/alchemyEngine/klipper_frame_expansion_comp
-- LED strip lighting - held by these - https://www.thingiverse.com/thing:4933314/files
-- With cable cover for top end of Z belts - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide
-- And able cover for the bottom of the z belt - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
 - 5.5 inch OLED display - https://voronregistry.com/mods/sttts-waveshare55inchhdmiamoledmount
 - Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
 - Wago clip mounts to improve wiring
 - Improved Raspberry Pi mount - https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl (needs extra DIN mount - https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
-- Better cooling head, either ABBN 30 - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Badnoob/AB-BN or Stealthburner - https://vorondesign.com/voron_stealthburner when it is out of beta
+- Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta
   
 ## Test prints
 - Voron test cube
