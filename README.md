@@ -65,6 +65,9 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Andrew Ellis print tining guide and parts
 - Filament swatches - https://www.printables.com/model/27814
 
+## Other resources
+- BTT Octopus pinout - https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/revnull/btt_octopus_pins
+
 
   
   
