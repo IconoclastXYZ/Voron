@@ -60,7 +60,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Change Z mount - either stubby mount with nylock nuts (Andrew Ellis) or using spherical bearings - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
 - Replace front z idlers - either with new 2.4r2 design (https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/Gantry/Front_Idlers) or the Rama design (https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers)
 - Gantry backing bars to stop bimetallic strip effect and warping
-- ADXL mounting for klipper vibration reduction
+- ADXL mounting for klipper resonance compensation - https://www.klipper3d.org/Measuring_Resonances.html
   
 ## Under consideration
 - Frame expansion compensation - https://github.com/alchemyEngine/klipper_frame_expansion_comp
