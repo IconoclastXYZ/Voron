@@ -69,6 +69,9 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 
 ## Other resources
 - BTT Octopus pinout - https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/revnull/btt_octopus_pins
+- Nero 3DP Tutorial video on deracking - https://www.youtube.com/watch?v=cOn6u9kXvy0
+- Plating tool for optimising printing plates - https://github.com/Rhoban/Plater, but the Windows version needs to come from here - https://drive.google.com/drive/folders/1USaJTZzJk_7KIQr8ctoPnoI9gQ6FYcY9 which was listed on the Issues page
+- CloudCompare tool - finding differences in models / meshes (and lots more!) - https://www.cloudcompare.org/
 
 
   
