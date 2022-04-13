@@ -35,9 +35,9 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - Deck support clips - https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Panel_Mounting/deck_support_4mm_x8.stl
   - Rear chamber camera mount with DFRobot USB 1080p camera - https://3dmixers.com/m/181820-voron-24-camera-mount and https://core-electronics.com.au/raspberry-pi-wide-angle-camera-module-seeed-studio.html
   - Sturdy handles - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles
-  - Z axis tension mod from Edward Yeeks
+  - Z axis tension mod from Edward Yeeks - https://github.com/edwardyeeks/VoronUsers/tree/master/printer_mods/edwardyeeks/V2.4_z_drive_motor_tensioner_mod
   - Matching skirts with power inlet and filter from Trident design - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet
-  - Heating bed insulation
+  - Heating bed insulation - https://www.carbuilders.com.au/peel-stick-heat-shield
   - Raspberry Pi cooling fan - https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html
   - LED strip lighting - held by these - https://www.thingiverse.com/thing:4933314/files
   - With cable cover for top end of Z belts - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide
