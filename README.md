@@ -43,7 +43,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - With cable cover for top end of Z belts - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide
   - And able cover for the bottom of the z belt - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
   - Better cooling head, ABBN 30 - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Badnoob/AB-BN 
-  - Gantry backing bars to stop bimetallic strip effect and warping - https://www.aliexpress.com/item/1005003779041015.html?spm=a2g0o.order_list.0.0.21ef180202r18o
+  - Gantry backing bars to stop bimetallic strip effect and warping, design from - https://github.com/tanaes/whopping_Voron_mods/tree/main/extrusion_backers, also need new XY chain riser - https://github.com/tanaes/whopping_Voron_mods/blob/main/extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl, purchased from - https://www.aliexpress.com/item/1005003779041015.html?spm=a2g0o.order_list.0.0.21ef180202r18o
 </details>
   
 <details>
