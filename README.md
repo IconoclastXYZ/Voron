@@ -71,6 +71,9 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta
 - HUVUD CAN Bus toolhead board - reduces wires to 4 - https://lukeslabonline.com/products/huvud
 - Raspberry Pi CAN Bus board to go with HUVUD - https://learn.sb-components.co.uk/File:RS485-CAN-HAT.png
+- Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
+- Plug panel for external connections to the Pi - https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl, but need to find out what the holes are sized for?
+- Side entry for filament and HUVUD chain mount - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell
   
 ## Test prints
 - Voron test cube
