@@ -74,6 +74,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
 - Plug panel for external connections to the Pi - https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl, but need to find out what the holes are sized for?
 - Side entry for filament and HUVUD chain mount - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell
+- Pin mod for gantry - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod
   
 ## Test prints
 - Voron test cube
