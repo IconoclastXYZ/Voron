@@ -35,15 +35,17 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - [Deck support clips](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Panel_Mounting/deck_support_4mm_x8.stl)
   - [Rear chamber camera mount](https://3dmixers.com/m/181820-voron-24-camera-mount) with [DFRobot USB 1080p camera](https://core-electronics.com.au/raspberry-pi-wide-angle-camera-module-seeed-studio.html)
   - [Sturdy handles](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles)
-  - Z axis tension mod from Edward Yeeks - https://github.com/edwardyeeks/VoronUsers/tree/master/printer_mods/edwardyeeks/V2.4_z_drive_motor_tensioner_mod
-  - Matching skirts with power inlet and filter from Trident design - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet
-  - Heating bed insulation - https://www.carbuilders.com.au/peel-stick-heat-shield
-  - Raspberry Pi cooling fan - https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html
-  - LED strip lighting - held by these - https://www.thingiverse.com/thing:4933314/files
-  - With cable cover for top end of Z belts - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide
-  - And able cover for the bottom of the z belt - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
-  - Better cooling head, ABBN 30 - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Badnoob/AB-BN 
-  - Gantry backing bars to stop bimetallic strip effect and warping, design from - https://github.com/tanaes/whopping_Voron_mods/tree/main/extrusion_backers, also need new XY chain riser - https://github.com/tanaes/whopping_Voron_mods/blob/main/extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl, purchased from - https://www.aliexpress.com/item/1005003779041015.html?spm=a2g0o.order_list.0.0.21ef180202r18o
+  - [Z axis tension mod from Edward Yeeks](https://github.com/edwardyeeks/VoronUsers/tree/master/printer_mods/edwardyeeks/V2.4_z_drive_motor_tensioner_mod)
+  - [Matching skirts with power inlet and filter from Trident design](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet)
+  - [Heating bed insulation](https://www.carbuilders.com.au/peel-stick-heat-shield)
+  - [Raspberry Pi cooling fan](https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html)
+  - LED strip lighting - [stuck to bars](https://www.thingiverse.com/thing:4933314/files)
+  - With [cable cover for top end of Z belts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide)
+  - [Cable cover for the bottom of the z belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover) or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
+  - [Better cooling head, ABBN 30](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Badnoob/AB-BN)
+  - [Gantry backing bars](https://github.com/tanaes/whopping_Voron_mods/tree/main/extrusion_backers) to stop bimetallic strip effect and warping, purchased on [AliExpress](https://www.aliexpress.com/item/1005003779041015.html?spm=a2g0o.order_list.0.0.21ef180202r18o), also need new [XY chain riser](https://github.com/tanaes/whopping_Voron_mods/blob/main/extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl) or some washers 
+  - [Pin mod for gantry](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod) - but just did the xy for now
+  - [Replace front z idlers with Rama design](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers) but could have used the new design from [2.4r2](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/Gantry/Front_Idlers)
 </details>
   
 <details>
@@ -59,7 +61,6 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 
 ## ToDo
 - Change Z mount - either stubby mount with nylock nuts (Andrew Ellis) or using spherical bearings - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C
-- Replace front z idlers - either with new 2.4r2 design (https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/Gantry/Front_Idlers) or the Rama design (https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers)
 - ADXL mounting for klipper resonance compensation - https://www.klipper3d.org/Measuring_Resonances.html
   
 ## Under consideration
@@ -74,7 +75,6 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
 - Plug panel for external connections to the Pi - https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl, but need to find out what the holes are sized for?
 - Side entry for filament and HUVUD chain mount - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell
-- Pin mod for gantry - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod
   
 ## Test prints
 - Voron test cube
