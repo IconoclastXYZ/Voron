@@ -26,15 +26,15 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   <summary>Physical</summary>
   
   - [Klicky mod](https://github.com/jlas1/Klicky-Probe) instead of Omron induction sensor 
-  - Purge bucket and brush - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
+  - [Purge bucket and brush](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber) but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
   - MGN12H single X rail with reprinted parts to suit
   - Polycarbonate twinwall (8mm) side and top panels (much better insulation than 3mm acrylic) - details [here]( https://github.com/IconoclastXYZ/Voron/blob/main/articles/insulation.md)
-  - Quick removable side / top panel latches - https://github.com/richardjm/voron-parts/tree/main/voron-2.4/FilamentLatch
-  - Removeable front hinges - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors
-  - Z chain guide mounted chamber thermistor - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Z_Chain_Guide_Thermistor_Mount
-  - Deck support clips - https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Panel_Mounting/deck_support_4mm_x8.stl
-  - Rear chamber camera mount with DFRobot USB 1080p camera - https://3dmixers.com/m/181820-voron-24-camera-mount and https://core-electronics.com.au/raspberry-pi-wide-angle-camera-module-seeed-studio.html
-  - Sturdy handles - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles
+  - [Quick removable side / top panel latches](https://github.com/richardjm/voron-parts/tree/main/voron-2.4/FilamentLatch)
+  - [Removeable front hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors) - but use the old engineering trick of a longer screw in the bottom hinge so that they are much easier to get back on
+  - [Z chain guide mounted chamber thermistor](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Z_Chain_Guide_Thermistor_Mount)
+  - [Deck support clips](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Panel_Mounting/deck_support_4mm_x8.stl)
+  - [Rear chamber camera mount](https://3dmixers.com/m/181820-voron-24-camera-mount) with [DFRobot USB 1080p camera](https://core-electronics.com.au/raspberry-pi-wide-angle-camera-module-seeed-studio.html)
+  - [Sturdy handles](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles)
   - Z axis tension mod from Edward Yeeks - https://github.com/edwardyeeks/VoronUsers/tree/master/printer_mods/edwardyeeks/V2.4_z_drive_motor_tensioner_mod
   - Matching skirts with power inlet and filter from Trident design - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet
   - Heating bed insulation - https://www.carbuilders.com.au/peel-stick-heat-shield
