@@ -25,7 +25,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 <details>
   <summary>Physical</summary>
   
-  - Klicky mod instead of Omron induction sensor - https://github.com/jlas1/Klicky-Probe
+  - [Klicky mod] instead of Omron induction sensor - (https://github.com/jlas1/Klicky-Probe)
   - Purge bucket and brush - https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
   - MGN12H single X rail with reprinted parts to suit
   - Polycarbonate twinwall (8mm) side and top panels (much better insulation than 3mm acrylic) - details [here]( https://github.com/IconoclastXYZ/Voron/blob/main/articles/insulation.md)
