@@ -90,6 +90,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - CloudCompare tool - finding differences in models / meshes (and lots more!) - https://www.cloudcompare.org/
 - Voron mechanical construction manuals - [current and prior versions](https://docs.vorondesign.com/build/mechanical/#v2)
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
+- [Great list of Voron Mods](https://github.com/Amarpal89/VoronUsers/tree/master/printer_mods)
 
 
   
