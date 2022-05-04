@@ -1,6 +1,8 @@
 # Voron
 Build details, tips, tricks and traps for the 2.4 r1 - r2
 
+![Nearly finished](/images/20220413_200053.jpg)
+
 # Base build
 ## Formbot 3D kit - supplied to 2.4r1 specs but with
 - hall effect XY endstops
