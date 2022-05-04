@@ -14,7 +14,7 @@ There were a few traps for young players in the Formbot 3D build, outlined [here
 ## What to print?
 Third party (Etsy) printed parts in ASA to 2.4r1 with a few extra needed for the MGN12H rail
 
-Turns out that they sponaneously printed the new (r2) dine rail mounts for components, which is great
+Turns out that they spontaneously printed the new (r2) din rail mounts for components, which is great
 
 Quite a few other parts from r2 can be printed for r1 kits and only improve them, eg. z-axis and ab-axis idlers, all the skirts, all electronics mounts
 
