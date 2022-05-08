@@ -103,11 +103,11 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Changed settings for overhangs to slow down much more and for PLA to cool agressively - much better overhangs
 - Supports - automatic puts them *everywhere* which is a pain, paint them on only as required. Slower overhang head speeds are much better than removing lots more supports
 - Suggested support settings from https://forum.prusa3d.com/forum/prusaslicer/prusaslicer-hard-to-remove-supports/
-0.25mm z distance.
-75% xy distance.
-3mm support spacing.
-4 interface layers.
-0.2mm interface layer spacing.
-I think those are the key settings. Exposed support pulls off easily. Any entangled with the part (e.g. between legs) requires cutting to separate before pulling apart. 
+-- 0.25mm z distance.
+-- 75% xy distance.
+-- 3mm support spacing.
+-- 4 interface layers.
+-- 0.2mm interface layer spacing.
+-- I think those are the key settings. Exposed support pulls off easily. Any entangled with the part (e.g. between legs) requires cutting to separate before pulling apart. 
 
 These settings are working well for me with PLA and both 0.25 and 0.40mm nozzles. Haven't tried much else.
