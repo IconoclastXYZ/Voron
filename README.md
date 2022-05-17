@@ -73,6 +73,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta
 - HUVUD CAN Bus toolhead board - reduces wires to 4 - https://lukeslabonline.com/products/huvud
+- Alternative CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.0%20(STM32F072))
 - Raspberry Pi CAN Bus board to go with HUVUD - https://learn.sb-components.co.uk/File:RS485-CAN-HAT.png
 - Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
 - [Plug panel](https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl) for external connections to the Pi, but need to find out what the holes are sized for?
