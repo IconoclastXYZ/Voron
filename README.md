@@ -67,7 +67,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   
 ## Under consideration
 - [Frame expansion compensation](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
-- [5.5 inch OLED display](https://voronregistry.com/mods/sttts-waveshare55inchhdmiamoledmount)
+- [5.5 inch OLED display](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/sttts/Waveshare-5.5-inch-HDMI-AMOLED)
 - Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
 - Wago clip mounts to improve wiring
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
