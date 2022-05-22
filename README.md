@@ -57,7 +57,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - lcd_tweaks.cfg
   - z_calibration.cfg using Klicky probe - https://github.com/protoloft/klipper_z_calibration#command-calibrate_z
   - Github autocommit
-  - Mainsail timelapse.cfg
+  - Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
   - Fan control for Octopus - temperature controlled
   - Fan control for exhaust fan - keeps more stable chamber temp
 </details>
