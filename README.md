@@ -8,7 +8,7 @@ Build details, tips, tricks and traps for the 2.4 r1 - r2
 - hall effect XY endstops
 - z endstop circuit board
 - Phaetus Dragon HF hotend
-- Octopus 1.1
+- [BigTreeTech Octopus 1.1](https://www.biqu.equipment/products/bigtreetech-octopus-v1-1)
 - Raspberry Pi 3B+ (1GB RAM)
 
 There were a few traps for young players in the Formbot 3D build, outlined [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/formbot_build.md)
