@@ -75,7 +75,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - HUVUD CAN Bus toolhead board - reduces wires to 4 - https://lukeslabonline.com/products/huvud
 - Alternative CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.0%20(STM32F072))
 - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
--- Add to /boot/config.txt
+-- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
 ```
 [all]
 dtparam=spi=on
