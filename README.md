@@ -96,7 +96,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - [Klipper config reference](https://www.klipper3d.org/Overview.html)
 - [G-code Wiki](https://reprap.org/wiki/G-code)
 - [Nero 3DP Tutorial video on deracking](https://www.youtube.com/watch?v=cOn6u9kXvy0)
-- [Plating tool for optimising printing plates](https://github.com/Rhoban/Plater), but the Windows version needs to come from here - https://drive.google.com/drive/folders/1USaJTZzJk_7KIQr8ctoPnoI9gQ6FYcY9 which was listed on the Issues page
+- [Plating tool for optimising printing plates](https://github.com/Rhoban/Plater), but the Windows version needs to come from [here](https://drive.google.com/drive/folders/1USaJTZzJk_7KIQr8ctoPnoI9gQ6FYcY9) which was listed on the Issues page
 - CloudCompare tool - finding differences in models / meshes (and lots more!) - https://www.cloudcompare.org/
 - Voron mechanical construction manuals - [current and prior versions](https://docs.vorondesign.com/build/mechanical/#v2)
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
