@@ -102,6 +102,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 
 ## Other resources
 - [BTT Octopus pinout](https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/revnull/btt_octopus_pins)
+- [BTT Schematic from Thomas White](/images/Octopus34-2048x1124.png)
 - [Klipper config reference](https://www.klipper3d.org/Overview.html)
 - [G-code Wiki](https://reprap.org/wiki/G-code)
 - [Nero 3DP Tutorial video on deracking](https://www.youtube.com/watch?v=cOn6u9kXvy0)
