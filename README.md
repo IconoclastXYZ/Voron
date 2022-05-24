@@ -86,6 +86,14 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - [Plug panel](https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl) for external connections to the Pi, but need to find out what the holes are sized for?
 - [Side entry for filament and HUVUD chain mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell)
 - How to [automate Klipper updates](https://docs.vorondesign.com/community/howto/drachenkatze/automating_klipper_mcu_updates.html)
+-- For this you will need to add an entry into the `~/klipper/scripts/spi_flash/board_defs.py` file for the BTT Octopus 1.1
+```
+'btt-oct-1.1': {
+        'mcu': "stm32f446xx",
+        'spi_bus': "spi2",
+        "cs_pin": "PB12",
+}
+```
   
 ## Test prints
 - Voron test cube
