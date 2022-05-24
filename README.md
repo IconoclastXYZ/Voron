@@ -91,7 +91,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 'btt-oct-1.1': {
         'mcu': "stm32f446xx",
         'spi_bus': "spi2",
-        "cs_pin": "PC12",
+        "cs_pin": "PC12"
 }
 ```
   
