@@ -129,3 +129,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 -- I think those are the key settings. Exposed support pulls off easily. Any entangled with the part (e.g. between legs) requires cutting to separate before pulling apart. 
 
 These settings are working well for me with PLA and both 0.25 and 0.40mm nozzles. Haven't tried much else.
+
+### Filament based settings
+- Adjust the Z-offset based on the filament
+- SET_GCODE_OFFSET Z_ADJUST=0.05 MOVE=1 - moves it up 0.05mmm, used for ASA on a hot bed in the Filament Custom G-code settings
