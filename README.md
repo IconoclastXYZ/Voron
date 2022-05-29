@@ -71,7 +71,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
 - Wago clip mounts to improve wiring
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
-- Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta
+- Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta, however the online manual (v1.05) is quite out of date and incomplete. Two videos give a better, but as yet incomplete rundown ([1](https://www.youtube.com/watch?v=iuNypEEPGVY) and [2](https://www.youtube.com/watch?v=GspIPzO3FJ8))
 - HUVUD CAN Bus toolhead board - reduces wires to 4 - https://lukeslabonline.com/products/huvud
 - Alternative CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.0%20(STM32F072))
 - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
