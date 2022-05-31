@@ -99,6 +99,8 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - Voron test cube
 - Andrew Ellis print tining guide and parts
 - Filament swatches - https://www.printables.com/model/27814
+- [Bridging tests](https://www.thingiverse.com/thing:476845/files)
+- [Temperature tower models](https://www.thingiverse.com/thing:2729076)
 
 ## Other resources
 - [BTT Octopus pinout](https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/revnull/btt_octopus_pins)
@@ -109,7 +111,6 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - [Plating tool for optimising printing plates](https://github.com/Rhoban/Plater), but the Windows version needs to come from [here](https://drive.google.com/drive/folders/1USaJTZzJk_7KIQr8ctoPnoI9gQ6FYcY9) which was listed on the Issues page
 - CloudCompare tool - finding differences in models / meshes (and lots more!) - https://www.cloudcompare.org/
 - Voron mechanical construction manuals - [current and prior versions](https://docs.vorondesign.com/build/mechanical/#v2)
-- [Temperature tower models](https://www.thingiverse.com/thing:2729076)
 - [Great list of Voron Mods](https://github.com/Amarpal89/VoronUsers/tree/master/printer_mods)
 
 ## Slicer information
