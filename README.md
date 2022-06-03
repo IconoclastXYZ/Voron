@@ -94,6 +94,17 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
         "cs_pin": "PC12"
 }
 ```
+- Although this method won't work for me. I probably have the pin details wrong for the btt Octopus and anyway, if I edit the file Mainsail shows the klipper install as 'dirty' and if I update klipper it wipes these details.
+- Instead do this:
+```
+make clean KCONFIG_CONFIG=config.octopus
+make menuconfig KCONFIG_CONFIG=config.octopus
+make KCONFIG_CONFIG=config.octopus
+
+sudo service klipper stop
+make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
+sudo service klipper start
+```
   
 ## Test prints
 - Voron test cube
