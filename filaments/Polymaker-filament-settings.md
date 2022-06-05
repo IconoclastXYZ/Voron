@@ -20,3 +20,9 @@
 | Min print speed               | 10mm/s |     |     |          |
 | Filament overrides            |        |     |     |          |
 | Retraction length             |  2.6mm |     |     |          |
+
+## Other settings for all filaments
+
+- All as per Andrew Ellis profile except
+-- Bridge speed - 60mm/s
+-- Flow ratio - bridge - 70%
