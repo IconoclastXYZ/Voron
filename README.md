@@ -113,6 +113,12 @@ sudo service klipper start
 - [Bridging tests](https://www.thingiverse.com/thing:476845/files)
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
 
+## Filament settings for the Voron
+- Polymaker Polylite PA6-CF
+- Polymaker Polylite ASA
+- Polymaker Polylite PLA
+- Polymaker Polylite PC
+
 ## Other resources
 - [BTT Octopus pinout](https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/revnull/btt_octopus_pins)
 - [BTT Schematic from Thomas White](/images/Octopus34-2048x1124.png)
