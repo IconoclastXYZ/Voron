@@ -113,7 +113,7 @@ sudo service klipper start
 - [Bridging tests](https://www.thingiverse.com/thing:476845/files)
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
 
-## [Filament settings for the Voron](/blob/main/filaments/Polymaker-filament-settings.md)
+## [Filament settings for the Voron](/filaments/Polymaker-filament-settings.md)
 - Polymaker Polylite PA6-CF
 - Polymaker Polylite ASA
 - Polymaker Polylite PLA
