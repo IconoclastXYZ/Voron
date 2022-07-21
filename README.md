@@ -49,6 +49,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - [Pin mod for gantry](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod) - but just did the xy for now
   - [Replace front z idlers with Rama design](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers) but could have used the new design from [2.4r2](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/Gantry/Front_Idlers)
   - Change Z mount to use [spherical bearings](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C), tried IGUS, but too much stiction so using metal ones. Could have used nylock nuts (per Andrew Ellis) - now there is no friction on z-adjust. Checked the original parts and they had significant wear / catch marks!
+  - ADXL mounting for [klipper resonance compensation](https://www.klipper3d.org/Measuring_Resonances.html) - actually no problem. Just use a longer screw for any part of the print head and it works. No fancy mount required and it comes off afterwards anyway.
 </details>
   
 <details>
@@ -63,7 +64,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 </details>
 
 ## ToDo
-- ADXL mounting for [klipper resonance compensation](https://www.klipper3d.org/Measuring_Resonances.html) - actually no problem. Just use a longer screw for any part of the print head and it works. No fancy mount required and it comes off afterwards anyway.
+
   
 ## Under consideration
 - [Frame expansion compensation](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
