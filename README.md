@@ -107,6 +107,7 @@ sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
 sudo service klipper start
 ```
+- Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
   
 ## Test prints
 - Voron test cube
