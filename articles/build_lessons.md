@@ -13,3 +13,4 @@ In no particular order:
 sudo crontab -e
 */5 * * * * /bin/ping -q -c10 192.168.8.1 > /dev/null 2>&1 || (ip link set dev wlan0 down ;ip link set dev wlan0 up ;/usr/bin/logger wifi on wlan0 restarted via crontab)
 ```
+- to check if it is restarting the WiFi check the syslog ` tail -10 /var/log/syslog `
