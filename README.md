@@ -50,6 +50,18 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - [Replace front z idlers with Rama design](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers) but could have used the new design from [2.4r2](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/Gantry/Front_Idlers)
   - Change Z mount to use [spherical bearings](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C), tried IGUS, but too much stiction so using metal ones. Could have used nylock nuts (per Andrew Ellis) - now there is no friction on z-adjust. Checked the original parts and they had significant wear / catch marks!
   - ADXL mounting for [klipper resonance compensation](https://www.klipper3d.org/Measuring_Resonances.html) - actually no problem. Just use a longer screw for any part of the print head and it works. No fancy mount required and it comes off afterwards anyway.
+  - Wago clip mounts to improve wiring
+  - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
+  - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.0%20(STM32F072))
+  - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
+-- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
+```
+[all]
+dtparam=spi=on
+dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
+```
+- With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
+
 </details>
   
 <details>
@@ -61,28 +73,39 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
   - Fan control for Octopus - temperature controlled
   - Fan control for exhaust fan - keeps more stable chamber temp
+  - Simplying MCU klipper updates:
+```
+cd ~/klipper/
+make clean KCONFIG_CONFIG=config.octopus
+make menuconfig KCONFIG_CONFIG=config.octopus
+make KCONFIG_CONFIG=config.octopus
+
+sudo service klipper stop
+make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
+sudo service klipper start
+```
+  - Then for the BTT EBB CANBus Board:
+```
+cd ~/klipper/
+make clean KCONFIG_CONFIG=config.ebb
+make menuconfig KCONFIG_CONFIG=config.ebb
+make KCONFIG_CONFIG=config.octopus
+  
+cd ~/klipper/lib/canboot
+python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
+```
+  
+- Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
+
 </details>
 
 ## ToDo
-
   
 ## Under consideration
 - [Frame expansion compensation](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
 - [5.5 inch OLED display](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/sttts/Waveshare-5.5-inch-HDMI-AMOLED)
 - Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
-- Wago clip mounts to improve wiring
-- [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta, however the online manual (v1.05) is quite out of date and incomplete. Two videos give a better, but as yet incomplete rundown ([1](https://www.youtube.com/watch?v=iuNypEEPGVY) and [2](https://www.youtube.com/watch?v=GspIPzO3FJ8))
-- HUVUD CAN Bus toolhead board - reduces wires to 4 - https://lukeslabonline.com/products/huvud
-- Alternative CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.0%20(STM32F072))
-- [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
--- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
-```
-[all]
-dtparam=spi=on
-dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
-```
-- With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
 - Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
 - [Plug panel](https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl) for external connections to the Pi, but need to find out what the holes are sized for?
 - [Side entry for filament and HUVUD chain mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell)
@@ -96,18 +119,6 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 }
 ```
 - Although this method won't work for me. I probably have the pin details wrong for the btt Octopus and anyway, if I edit the file Mainsail shows the klipper install as 'dirty' and if I update klipper it wipes these details.
-- Instead do this:
-```
-cd ~/klipper/
-make clean KCONFIG_CONFIG=config.octopus
-make menuconfig KCONFIG_CONFIG=config.octopus
-make KCONFIG_CONFIG=config.octopus
-
-sudo service klipper stop
-make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
-sudo service klipper start
-```
-- Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
 - Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
   
 ## Test prints
