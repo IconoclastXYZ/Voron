@@ -84,7 +84,7 @@ sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
 sudo service klipper start
 ```
-  - Then for the BTT EBB CANBus Board:
+  - Then for the BTT EBB CANBus Board - after setting it up with [CANBoot](https://github.com/Arksine/CanBoot), explained [here](https://www.youtube.com/watch?v=_FELCN8CbWA):
 ```
 cd ~/klipper/
 make clean KCONFIG_CONFIG=config.ebb
