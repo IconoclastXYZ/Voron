@@ -61,6 +61,7 @@ dtparam=spi=on
 dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 ```
 - With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
+- Frame thermistor (bare 3950) for doing thermal expansion compensation - mounted rear left, tucked inside the rail and held in with insulating foam so that it gives a good reading of the actual frame and not the (hotter) chamber
 
 </details>
   
@@ -73,6 +74,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
   - Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
   - Fan control for Octopus - temperature controlled
   - Fan control for exhaust fan - keeps more stable chamber temp
+  - Thermal expansion compensation from [AlchemyEngine](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
   - Simplying MCU klipper updates:
 ```
 cd ~/klipper/
