@@ -74,7 +74,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
   - Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
   - Fan control for Octopus - temperature controlled
   - Fan control for exhaust fan - keeps more stable chamber temp
-  - Thermal expansion compensation from [AlchemyEngine](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
+  - Thermal expansion compensation from [AlchemyEngine](https://github.com/alchemyEngine/klipper_frame_expansion_comp). Then to query the compensation `QUERY_FRAME_COMP`
   - Simplying MCU klipper updates:
 ```
 cd ~/klipper/
