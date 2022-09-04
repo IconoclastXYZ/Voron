@@ -106,13 +106,12 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 ## ToDo
   
 ## Under consideration
-- [Frame expansion compensation](https://github.com/alchemyEngine/klipper_frame_expansion_comp)
+- [BTT Smart Filament Sensor](https://biqu.equipment/products/btt-sfs-v1-0-smart-filament-sensor-detection-stuck-blocking-filament-module) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Empusas/BTT_Filament_Motion_Sensor_Mount) since the run-out sensor currently does not detect jams, which didn't work out well
+- [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
 - [5.5 inch OLED display](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/sttts/Waveshare-5.5-inch-HDMI-AMOLED)
-- Chamber heater - https://www.teamfdm.com/files/file/455-chamber-heater/
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner when it is out of beta, however the online manual (v1.05) is quite out of date and incomplete. Two videos give a better, but as yet incomplete rundown ([1](https://www.youtube.com/watch?v=iuNypEEPGVY) and [2](https://www.youtube.com/watch?v=GspIPzO3FJ8))
 - Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
 - [Plug panel](https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl) for external connections to the Pi, but need to find out what the holes are sized for?
-- [Side entry for filament and HUVUD chain mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell)
 - How to [automate Klipper updates](https://docs.vorondesign.com/community/howto/drachenkatze/automating_klipper_mcu_updates.html)
 -- For this you will need to add an entry into the `~/klipper/scripts/spi_flash/board_defs.py` file for the BTT Octopus 1.1
 ```
