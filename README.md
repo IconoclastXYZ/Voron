@@ -42,7 +42,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - [Heating bed insulation](https://www.carbuilders.com.au/peel-stick-heat-shield)
   - [Raspberry Pi cooling fan](https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html)
   - LED strip lighting - [stuck to bars](https://www.thingiverse.com/thing:4933314/files)
-  - With [cable cover for top end of Z belts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide)
+  - With [cable cover for top end of Z belts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/samwiseg0/corner_cable_hide) or [this better one](https://github.com/VoronDesign/VoronUsers/blob/ad3b6e1f34209fbf31f515cbb76d94880a948f3c/printer_mods/Dr-Info/corner_cable_cover_with_drop_down_holes/README.md)
   - [Cable cover for the bottom of the z belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover) or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
   - [Better cooling head, ABBN 30](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Badnoob/AB-BN)
   - [Gantry backing bars](https://github.com/tanaes/whopping_Voron_mods/tree/main/extrusion_backers) to stop bimetallic strip effect and warping, purchased on [AliExpress](https://www.aliexpress.com/item/1005003779041015.html?spm=a2g0o.order_list.0.0.21ef180202r18o), also need new [XY chain riser](https://github.com/tanaes/whopping_Voron_mods/blob/main/extrusion_backers/STLs/XY_cable_chain_bridge-3hole-3mm_backer.stl) or some washers 
