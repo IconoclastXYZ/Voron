@@ -23,3 +23,7 @@
 
 ## Umbilicus mount for A-motor
 - [No need to reprint the mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Minsekt/Rear_Umbilical)
+
+## Cable end protectors
+- [PG7 cable glands at each end](https://www.amazon.com.au/gp/product/B08K8FB4KV/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&th=1)
+- Mod the end mounts to include a thread for the cable gland (1/2-20 UNF thread)
