@@ -140,6 +140,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 
 ## Other resources
 - [BTT Octopus pinout](https://github.com/VoronDesign/VoronUsers/tree/master/firmware_configurations/klipper/revnull/btt_octopus_pins)
+- [Great article on the Octopus with lots of pinouts, etc.](https://3dwork.io/en/btt-octopus/)
 - [BTT Schematic from Thomas White](/images/Octopus34-2048x1124.png)
 - [Klipper config reference](https://www.klipper3d.org/Overview.html)
 - [G-code Wiki](https://reprap.org/wiki/G-code)
