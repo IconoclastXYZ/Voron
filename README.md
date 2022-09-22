@@ -107,6 +107,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 </details>
 
 ## ToDo
+- Fix the `controller_fan.py` script so that controller fans do not always come on with any stepper motor
   
 ## Under consideration
 - [Front top camera mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB) for a slimline [USB Camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) because having to of the same cameras causes a conflict on the Raspberry Pi and only one is ever found
