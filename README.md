@@ -95,7 +95,7 @@ sudo service klipper start
 cd ~/klipper/
 make clean KCONFIG_CONFIG=config.ebb
 make menuconfig KCONFIG_CONFIG=config.ebb
-make KCONFIG_CONFIG=config.octopus
+make KCONFIG_CONFIG=config.ebb
   
 cd ~/klipper/lib/canboot
 python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
