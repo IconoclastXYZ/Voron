@@ -65,8 +65,11 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - [BTT Smart Filament Sensor](https://biqu.equipment/products/btt-sfs-v1-0-smart-filament-sensor-detection-stuck-blocking-filament-module) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Empusas/BTT_Filament_Motion_Sensor_Mount) since the run-out sensor currently does not detect jams, which didn't work out well
 - [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
+- Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
 - Rear umbilical mount and Y endstop relocation from [Reprapster](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Minsekt/Rear_Umbilical)
 - Stealthburner Umbilical cover from [majarspeed](https://github.com/majarspeed/Misc-Voron/tree/main/StealthBurner%20Umbilical%20cover)
+- [Front top camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB)
+- Rear under bed temperature sensor near the edge to better approximate when the bed had equilibrated (15C less at the edge underneath than from the sensor centrally under the heater pad)
 
 </details>
   
@@ -103,6 +106,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 ```
   
 - Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
+- [Pressure advance calibration pattern generator](https://realdeuce.github.io/Voron/PA/pressure_advance.html)
 
 </details>
 
@@ -124,7 +128,8 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 }
 ```
 - Although this method won't work for me. I probably have the pin details wrong for the btt Octopus and anyway, if I edit the file Mainsail shows the klipper install as 'dirty' and if I update klipper it wipes these details.
-- Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
+- [Full coverage heater pad](https://uniqueprints.shop/shop/buildplate/voron-keenovo-bed-heater-fermio/)
+- [Custom heater plate with slot for top of plate temperature sensor](https://preciseprinterparts.com/voron-cast-aluminum-printer-bed-350mm-vor-ver-24-and-18.html)
   
 ## Test prints
 - Voron test cube
