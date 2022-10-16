@@ -106,7 +106,6 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 ```
   
 - Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
-- [Pressure advance calibration pattern generator](https://realdeuce.github.io/Voron/PA/pressure_advance.html)
 
 </details>
 
@@ -137,6 +136,8 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 - Filament swatches - https://www.printables.com/model/27814
 - [Bridging tests](https://www.thingiverse.com/thing:476845/files)
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
+- [Hot end flow test generator](https://hotend-flow-tester.netlify.app/)
+- [Pressure advance calibration pattern generator](https://realdeuce.github.io/Voron/PA/pressure_advance.html)
 
 ## [Filament settings for the Voron](/filaments/Polymaker-filament-settings.md)
 - Polymaker Polylite PA6-CF
