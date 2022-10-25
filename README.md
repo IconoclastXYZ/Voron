@@ -156,6 +156,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 - CloudCompare tool - finding differences in models / meshes (and lots more!) - https://www.cloudcompare.org/
 - Voron mechanical construction manuals - [current and prior versions](https://docs.vorondesign.com/build/mechanical/#v2)
 - [Great list of Voron Mods](https://github.com/Amarpal89/VoronUsers/tree/master/printer_mods)
+- JINJA [Template Reference](https://jinja.palletsprojects.com/en/3.0.x/templates/) - used in klipper macros for additional control / automation
 
 ## Slicer information
 - After trying them all (IdeaMaker, PrusaSlicer, Cura (various versions), others I can't remember) settled on SuperSlicer
