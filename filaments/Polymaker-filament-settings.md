@@ -21,9 +21,15 @@
 | Filament overrides            |        |       |       |           |            |
 | Retraction length             | 2.6mm  | -     | -     | -         | 4mm        |
 | Wiping                        |        |       |       |           | Retracting |
+| Z_offset                      | 0.025mm|       |       |           |            |
+| Bridge flow                   | 40%    |       |       |           |            |
 
 ## Other settings for all filaments
 
 - All as per Andrew Ellis profile except
 -- Bridge speed - 60mm/s
 -- Flow ratio - bridge - 70%
+
+## Learning curve notes
+- PA6 CF likes less squish - 0.025mm less is not a bad start, and it really likes lower flow for bridges and slower speeds for printing, otherwise the surface finish gets really awful
+- Most of the other filaments can cope with quite fast printing, especially for fill
