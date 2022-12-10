@@ -52,9 +52,10 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - ADXL mounting for [klipper resonance compensation](https://www.klipper3d.org/Measuring_Resonances.html) - actually no problem. Just use a longer screw for any part of the print head and it works. No fancy mount required and it comes off afterwards anyway.
   - Wago clip mounts to improve wiring
   - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
-  - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.0%20(STM32F072))
+  - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
   - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
 -- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
+  - [Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2
 ```
 [all]
 dtparam=spi=on
@@ -129,6 +130,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 - Although this method won't work for me. I probably have the pin details wrong for the btt Octopus and anyway, if I edit the file Mainsail shows the klipper install as 'dirty' and if I update klipper it wipes these details.
 - [Full coverage heater pad](https://uniqueprints.shop/shop/buildplate/voron-keenovo-bed-heater-fermio/)
 - [Custom heater plate with slot for top of plate temperature sensor](https://preciseprinterparts.com/voron-cast-aluminum-printer-bed-350mm-vor-ver-24-and-18.html)
+- [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
   
 ## Test prints
 - Voron test cube
