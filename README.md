@@ -55,7 +55,6 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
   - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
 -- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
-  - [Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2
 ```
 [all]
 dtparam=spi=on
@@ -71,6 +70,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - Stealthburner Umbilical cover from [majarspeed](https://github.com/majarspeed/Misc-Voron/tree/main/StealthBurner%20Umbilical%20cover)
 - [Front top camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB)
 - Rear under bed temperature sensor near the edge to better approximate when the bed had equilibrated (15C less at the edge underneath than from the sensor centrally under the heater pad)
+- [Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2
 
 </details>
   
