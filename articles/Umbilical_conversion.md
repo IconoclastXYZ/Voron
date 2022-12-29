@@ -9,6 +9,8 @@
 ## CanBUS options
 - HUVUD
 - BTT EBB - 36 & 42 versions
+- Final wiring for the EBB36 board
+- 
 
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
