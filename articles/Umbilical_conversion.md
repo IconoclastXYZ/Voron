@@ -10,7 +10,7 @@
 - HUVUD
 - BTT EBB - 36 & 42 versions
 - Final wiring for the EBB36 board
-- 
+<img src="/images/EBB36 Voron wiring 2022-12-29 15_43_52.png" width="600">
 
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
