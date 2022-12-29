@@ -135,7 +135,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 - [FYSETC ultralight X rail](https://www.aliexpress.us/item/3256804719096286.html) with the appropriate mounting blocks from [here](https://github.com/GiulianoM/Fystec-Voron-X-Block), [here](https://www.thingiverse.com/thing:5671339) or [here](https://www.teamfdm.com/files/file/641-light-x-beam-mounting-block/), with the [M5 heat inserts](https://www.amazon.com/M5x5-8mm-OD7-1mm-Threaded-Plastic-Staking/dp/B08T9W17CR)
 - [Twin fan filter / chamber fan](https://github.com/nateb16/VoronUsers/tree/master/printer_mods/nateb16/THE_FILTER/THE_FILTER_STANDARD_BED_SPACING) possibly better than nevermore, which does not fit my setup
   
-## Test prints
+## Utility and Test prints
 - Voron test cube
 - Andrew Ellis print tining guide and parts
 - Filament swatches - https://www.printables.com/model/27814
@@ -143,6 +143,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
 - [Hot end flow test generator](https://hotend-flow-tester.netlify.app/)
 - [Pressure advance calibration pattern generator](https://realdeuce.github.io/Voron/PA/pressure_advance.html)
+- [Variety of Wago mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/LoganFraser/WagoMounts)
 
 ## [Filament settings for the Voron](/filaments/Polymaker-filament-settings.md)
 - Polymaker Polylite PA6-CF
