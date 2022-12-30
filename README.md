@@ -3,6 +3,10 @@ Build details, tips, tricks and traps for the 2.4 r1 - r2
 
 <img src="/images/20220413_200053.jpg" width="300">
 
+With a hotmesh from the finished printer
+
+<img src="/images/2022-12-11%2015_27_04%20hot_mesh.png" width="600">
+
 # Base build
 ## Formbot 3D kit - supplied to 2.4r1 specs but with
 - hall effect XY endstops
