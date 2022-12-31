@@ -43,9 +43,16 @@
 - Z-hop (Lift Z on Superslicer) - turn off, otherwise it strings / bulges
 - Cooling - full fan speed for bridges only
 
-- Example with slow print speeds, but not optimised for PA, retraction or bridging
+- Example with slow print speeds, but not optimised for PA, retraction or bridging (70% flow on left, then 5% decreases to reach 45% on right)
+<img src='/images/PA6-CF-initial_settings.jpg' width=600>
 
-- Example fully optimised
+ - Example partially optimsed
+<img src='/images/PA6-CF-partially-optimised.jpg' width=600>
+
+- Example fully optimised, seems best at ~50-55% flow
+- <img src='/images/PA6-CF-fully-optimised.jpg' width=600>
+
+- Examples of Voron test cubes, left in ASA, then same settings for PA6 CF (apart from slower speeds), gradually improving as retraction is increased, then not cross perimeters, then finally bridging is optimised on the right
 
 ### Other filaments
 - Most of the other filaments can cope with quite fast printing, especially for fill
