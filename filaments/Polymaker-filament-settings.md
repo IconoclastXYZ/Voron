@@ -39,6 +39,9 @@
 - Retraction - very important, and much higher - 6 mm works well
 - Wiping - also very important - 50% before retraction and then especially when crossing perimeters
 - Bridges - the other hard part with PA6 CF - reduce flow to 60% on the bridge and 75% above it, speed 30mm/sec, bridge line density min 50%, max 60%
+- Perimeters on bridges - choose 'Fill the voids with bridges' for the 'no_perimeter_unsupported_algo'
+- Z-hop (Lift Z on Superslicer) - turn off, otherwise it strings / bulges
+- Cooling - full fan speed for bridges only
 
 - Example with slow print speeds, but not optimised for PA, retraction or bridging
 
