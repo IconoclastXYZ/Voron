@@ -31,5 +31,18 @@
 -- Flow ratio - bridge - 70%
 
 ## Learning curve notes
-- PA6 CF likes less squish - 0.025mm less is not a bad start, and it really likes lower flow for bridges and slower speeds for printing, otherwise the surface finish gets really awful
+### PA6 CF - Polymaker
+- Drying - !!!!! >10 hours at >50C !!!!!
+- Squish - 0.025mm less than standard bed zeroing is not a bad start (for comparison, ASA likes more, so 0.025mm the other way)
+- Speed - much lower than PLA & ASA - so generally 30-40mm/sec, otherwise the surface finish is awful
+- Pressure advance - way difference than ASA (0.055, smoothing 0.020), instead use 0.150 with a 0.040 sec smoothing time
+- Retraction - very important, and much higher - 6 mm works well
+- Wiping - also very important - 50% before retraction and then especially when crossing perimeters
+- Bridges - the other hard part with PA6 CF - reduce flow to 60% on the bridge and 75% above it, speed 30mm/sec, bridge line density min 50%, max 60%
+
+- Example with slow print speeds, but not optimised for PA, retraction or bridging
+
+- Example fully optimised
+
+### Other filaments
 - Most of the other filaments can cope with quite fast printing, especially for fill
