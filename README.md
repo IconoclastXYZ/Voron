@@ -53,7 +53,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
   - [Pin mod for gantry](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_Trident_Pins_Mod) - but just did the xy for now
   - [Replace front z idlers with Rama design](https://github.com/Ramalama2/Voron-2-Mods/tree/main/Front_Idlers) but could have used the new design from [2.4r2](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/Gantry/Front_Idlers)
   - Change Z mount to use [spherical bearings](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/hartk1213/Voron2.4_GE5C), tried IGUS, but too much stiction so using metal ones. Could have used nylock nuts (per Andrew Ellis) - now there is no friction on z-adjust. Checked the original parts and they had significant wear / catch marks!
-  - ADXL mounting for [klipper resonance compensation](https://www.klipper3d.org/Measuring_Resonances.html) - actually no problem. Just use a longer screw for any part of the print head and it works. No fancy mount required and it comes off afterwards anyway.
+  - ~~ADXL mounting for [klipper resonance compensation](https://www.klipper3d.org/Measuring_Resonances.html) - actually no problem. Just use a longer screw for any part of the print head and it works. No fancy mount required and it comes off afterwards anyway.~~ no need as it is built into the EBB36 CanBUS board
   - Wago clip mounts to improve wiring
   - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
   - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
@@ -74,8 +74,9 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - Stealthburner Umbilical cover from [majarspeed](https://github.com/majarspeed/Misc-Voron/tree/main/StealthBurner%20Umbilical%20cover)
 - [Front top camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB)
 - Rear under bed temperature sensor near the edge to better approximate when the bed had equilibrated (15C less at the edge underneath than from the sensor centrally under the heater pad)
-- [Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2
-  - [Front top camera mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB) for a slimline [USB Camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) because having to of the same cameras causes a conflict on the Raspberry Pi and only one is ever found
+- ~~[Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2~~ - does not grip PA6 CF at all well, extra slippage and poor surface finish, trying other options
+- [Front top camera mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB) for a slimline [USB Camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) because having to of the same cameras causes a conflict on the Raspberry Pi and only one is ever found
+- [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
 
 </details>
   
@@ -83,12 +84,13 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
   <summary>Software - many from Andrew Ellis</summary>
   
   - lcd_tweaks.cfg
-  - z_calibration.cfg using Klicky probe - https://github.com/protoloft/klipper_z_calibration#command-calibrate_z
+  - ~~z_calibration.cfg using [Klicky probe](https://github.com/protoloft/klipper_z_calibration#command-calibrate_z)~~ Now using Voron Tap
   - Github autocommit
+  - Change color of Stealthburner and Main [leds](https://github.com/MapleLeafMakers/KlipperMacros) to show extruder and bed temperature
   - Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
   - Fan control for Octopus - temperature controlled
   - Fan control for exhaust fan - keeps more stable chamber temp
-  - Thermal expansion compensation from [AlchemyEngine](https://github.com/alchemyEngine/klipper_frame_expansion_comp). Then to query the compensation `QUERY_FRAME_COMP`
+  - Thermal expansion compensation from ~~[AlchemyEngine](https://github.com/alchemyEngine/klipper_frame_expansion_comp). Then to query the compensation `QUERY_FRAME_COMP`~~ - now built into Klipper
   - Simplying MCU klipper updates:
 ```
 cd ~/klipper/
@@ -134,7 +136,6 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u d3e7f0c00d1a
 - Although this method won't work for me. I probably have the pin details wrong for the btt Octopus and anyway, if I edit the file Mainsail shows the klipper install as 'dirty' and if I update klipper it wipes these details.
 - [Full coverage heater pad](https://uniqueprints.shop/shop/buildplate/voron-keenovo-bed-heater-fermio/)
 - [Custom heater plate with slot for top of plate temperature sensor](https://preciseprinterparts.com/voron-cast-aluminum-printer-bed-350mm-vor-ver-24-and-18.html)
-- [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
 - [Kinematic bed mount](https://github.com/tanaes/whopping_Voron_mods/tree/main/kinematic_bed)
 - [FYSETC ultralight X rail](https://www.aliexpress.us/item/3256804719096286.html) with the appropriate mounting blocks from [here](https://github.com/GiulianoM/Fystec-Voron-X-Block), [here](https://www.thingiverse.com/thing:5671339) or [here](https://www.teamfdm.com/files/file/641-light-x-beam-mounting-block/), with the [M5 heat inserts](https://www.amazon.com/M5x5-8mm-OD7-1mm-Threaded-Plastic-Staking/dp/B08T9W17CR)
 - [Twin fan filter / chamber fan](https://github.com/nateb16/VoronUsers/tree/master/printer_mods/nateb16/THE_FILTER/THE_FILTER_STANDARD_BED_SPACING) possibly better than nevermore, which does not fit my setup
