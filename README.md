@@ -108,7 +108,7 @@ make menuconfig KCONFIG_CONFIG=config.ebb
 make KCONFIG_CONFIG=config.ebb
   
 cd ~/klipper/lib/canboot
-python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u 35c02779d6f6
+python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u d3e7f0c00d1a
 ```
 - Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
 - [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and getr status updates
