@@ -77,6 +77,8 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - ~~[Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2~~ - does not grip PA6 CF at all well, extra slippage and poor surface finish, trying other options
 - [Front top camera mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB) for a slimline [USB Camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) because having to of the same cameras causes a conflict on the Raspberry Pi and only one is ever found
 - [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
+- 3 wire hotend fan with RPM monitoring, with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/)
+- changed to Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
 
 </details>
   
