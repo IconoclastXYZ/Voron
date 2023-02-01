@@ -57,5 +57,24 @@
 <img src='/images/Voron-cubes-side.jpg' width=600>
 <img src='/images/Voron-cubes-bottom.jpg' width=600>
 
+### Final thoughts on the PA6 CF
+- I went back to the drawing board, because even after *lots* of optimisation:
+<img src='/images/SB-rear-SS-trials.jpg' width=600>
+-  the best I could get on the Stealthburner rear (which is a very challenging part because of its complex shape, relatively long bridges, lots of holes and then a narrow fin that sticks up) was this:
+<img src='/images/SB-rear-SS-optimised.jpg' width=600>
+- As you can see, the bridges sag, the surface finish is awful, and it gets worse on the fin
+
+- I went to PrusaSlicer with a fresh setup and it (and the test cubes) got much better:
+- But there were still issues with the uneven surface finish and also blobs
+<img src='/images/SB-rear-PS-stock.jpg' width=600>
+
+- Finally I worked out the two key issues:
+1. PA6 CF does not like to print slow. The surface finish gets *much* better going from 25mm/s to 50mm/s for the external perimeter
+2. It does not like changing speed. Using the automatic slow-down to adjust for small layers makes it really bad - probably mostly because it makes it slow again
+3. It does not like to change volumetric speed fast - using `max_volumetric_extrusion_slope_negative = 1.8mm/s^2` cleaned it up considerably, but not perfect
+4. Retraction - Polymaker says 3-4mm at 50-60mm/s. This gave lots of blobs and ruined otherwise good looking prints. Instead 0.75mm at 30mm/s and NO z-hop (`retract_lift` on superslicer) cleaned it all up
+<img src='/images/SB-rear-PS-optimised.jpg' width=600>
+
+
 ### Other filaments
 - Most of the other filaments can cope with quite fast printing, especially for fill
