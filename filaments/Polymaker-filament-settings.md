@@ -75,6 +75,17 @@
 4. Retraction - Polymaker says 3-4mm at 50-60mm/s. This gave lots of blobs and ruined otherwise good looking prints. Instead 0.75mm at 30mm/s and NO z-hop (`retract_lift` on superslicer) cleaned it all up
 <img src='/images/SB-rear-PS-optimised1.jpg' width=600>
 
+- Key settings
+1. Temperature - Extruder - 280C, Bed - 35C, Chamber - 0
+2. Extruder - retraction length - 0.75mm, Lift Z - 0, Retraction/deretraction speed 30mm/s, Wipe on retracting by 50%
+3. Filament - cooling - 100% on bridges, otherwise 0%, max volumetrix speed 11mm^3/s, but never gets close, PA - 0.080, PA smooth time 0.040
+4. Print - infill gyroid, ensure vertical shell thickness, avoid crossing perimeters, detect bridging perimeters, seam rear, external perimeters first, Arachne
+5. Speed - Perimeters 100, small 50, external 50, infill 125, solid 120, top solid 50, bridges 60, gap 40, first layer 30
+6. Acceleration - perimeters 2000, infill 4000, bridge 3000, first layer 1000
+7. Pressure equalizer - max slope negative 1.8
+8. Bridge flow 0.8, Infill perimeter overlap 20%
+9. Extrusion widths - standard PrusaSlicer
+10. Output options - label objects
 
 ### Other filaments
 - Most of the other filaments can cope with quite fast printing, especially for fill
