@@ -116,7 +116,7 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u d3e7f0c00d1a
 ```
 - Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
 - [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and getr status updates
-
+- [Klipper adaptive meshing and purging](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging) which improved single part printing and also replaced my home grown fuzzy purge line and purge bucket macros
 </details>
 
 ## ToDo
