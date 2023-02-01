@@ -73,7 +73,7 @@
 2. It does not like changing speed. Using the automatic slow-down to adjust for small layers makes it really bad - probably mostly because it makes it slow again
 3. It does not like to change volumetric speed fast - using `max_volumetric_extrusion_slope_negative = 1.8mm/s^2` cleaned it up considerably, but not perfect
 4. Retraction - Polymaker says 3-4mm at 50-60mm/s. This gave lots of blobs and ruined otherwise good looking prints. Instead 0.75mm at 30mm/s and NO z-hop (`retract_lift` on superslicer) cleaned it all up
-<img src='/images/SB-rear-PS-optimised.jpg' width=600>
+<img src='/images/SB-rear-PS-optimised1.jpg' width=600>
 
 
 ### Other filaments
