@@ -12,6 +12,8 @@
 - Final wiring for the EBB36 board
 <img src="/images/EBB36 Voron wiring 2022-12-29 15_43_52.png" width="600">
 
+- Ended up using the BTT EBB36 1.2 with a [canbus mount](https://github.com/KayosMaker/CANboard_Mounts)
+
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
 
