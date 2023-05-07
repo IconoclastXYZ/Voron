@@ -7,15 +7,7 @@ With a hotmesh from the finished printer
 
 <img src="/images/2022-12-11%2015_27_04%20hot_mesh.png" width="600">
 
-# Base build
-## Formbot 3D kit - supplied to 2.4r1 specs but with
-- hall effect XY endstops
-- z endstop circuit board
-- Phaetus Dragon HF hotend
-- [BigTreeTech Octopus 1.1](https://www.biqu.equipment/products/bigtreetech-octopus-v1-1)
-- Raspberry Pi 3B+ (1GB RAM)
-
-There were a few traps for young players in the Formbot 3D build, outlined [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/formbot_build.md)
+## Base build from Formbot 3D kit - There were a few traps for young players in the Formbot 3D build, outlined [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/formbot_build.md)
 
 ## Things I wish I had known BEFORE starting to assemble the Voron
 Lots of others build lists and hints exist, with my particular blind spots / learning points listed [here](https://github.com/IconoclastXYZ/Voron/blob/main/articles/build_lessons.md)
