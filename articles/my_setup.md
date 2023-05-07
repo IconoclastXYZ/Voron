@@ -15,6 +15,9 @@
 ## Toolhead
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
 - [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
+- Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
+- changed to Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
+- 3 wire hotend fan with RPM monitoring, with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/)
 
 ## Print axes
 - MGN12H single X rail with reprinted parts to suit
@@ -34,18 +37,23 @@
 - [Cable cover for the bottom of the z belt](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Akio/cable_routing_z_belt_cover) or https://www.printables.com/model/84736-z-belt-cover-a-for-voron-24
 - [Deck support clips](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Panel_Mounting/deck_support_4mm_x8.stl)
 - [Rear chamber camera mount](https://www.thingiverse.com/thing:4756566) with [DFRobot USB 1080p camera](https://core-electronics.com.au/raspberry-pi-wide-angle-camera-module-seeed-studio.html)
-
+- [Front top camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB)
+- [Front top camera mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB) for a slimline [USB Camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) because having to of the same cameras causes a conflict on the Raspberry Pi and only one is ever found
+- Frame thermistor (bare 3950) for doing thermal expansion compensation - mounted rear left, tucked inside the rail and held in with insulating foam so that it gives a good reading of the actual frame and not the (hotter) chamber
+- [BTT Smart Filament Sensor](https://biqu.equipment/products/btt-sfs-v1-0-smart-filament-sensor-detection-stuck-blocking-filament-module) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Empusas/BTT_Filament_Motion_Sensor_Mount) since the run-out sensor currently does not detect jams, which didn't work out well
+- [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
   
 ## Print bed
 - [Purge bucket and brush](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber) but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
 - [Heating bed insulation](https://www.carbuilders.com.au/peel-stick-heat-shield)
+- Rear under bed temperature sensor near the edge to better approximate when the bed had equilibrated (15C less at the edge underneath than from the sensor centrally under the heater pad)
 
 ## Undercarriage
 - [Matching skirts with power inlet and filter from Trident design](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet)
 - [Raspberry Pi cooling fan](https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html)
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
-  - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
-  - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
+- CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
+- [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
 -- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
 ```
 [all]
@@ -54,38 +62,15 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 ```
 - With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
 
-## Mods
-<details>
-  <summary>Physical</summary>
- 
-- Frame thermistor (bare 3950) for doing thermal expansion compensation - mounted rear left, tucked inside the rail and held in with insulating foam so that it gives a good reading of the actual frame and not the (hotter) chamber
-- [BTT Smart Filament Sensor](https://biqu.equipment/products/btt-sfs-v1-0-smart-filament-sensor-detection-stuck-blocking-filament-module) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Empusas/BTT_Filament_Motion_Sensor_Mount) since the run-out sensor currently does not detect jams, which didn't work out well
-- [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
-- Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
-- Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
-- Stealthburner Umbilical cover from [majarspeed](https://github.com/majarspeed/Misc-Voron/tree/main/StealthBurner%20Umbilical%20cover)
-- [Front top camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB)
-- Rear under bed temperature sensor near the edge to better approximate when the bed had equilibrated (15C less at the edge underneath than from the sensor centrally under the heater pad)
-- ~~[Bondtech LGX Lite extruder](https://www.bondtech.se/product/lgx-lite-large-gears-extruder/) with [this mount](https://github.com/Eytecz/LGX_Lite_Stealthburner_CW2_style_mount), which ends up weighing 183g with the mount and LDO motor vs 156g for the stock CW2~~ - does not grip PA6 CF at all well, extra slippage and poor surface finish, trying other options
-- [Front top camera mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/chri.kai.in/Angry_CAM_USB) for a slimline [USB Camera](https://core-electronics.com.au/lattepanda-5mp-uvc-camera.html) because having to of the same cameras causes a conflict on the Raspberry Pi and only one is ever found
-
-- 3 wire hotend fan with RPM monitoring, with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/)
-- changed to Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
-
-</details>
-  
-<details>
-  <summary>Software - many from Andrew Ellis</summary>
-  
-  - lcd_tweaks.cfg
-  - ~~z_calibration.cfg using [Klicky probe](https://github.com/protoloft/klipper_z_calibration#command-calibrate_z)~~ Now using Voron Tap
-  - Github autocommit
-  - Change color of Stealthburner and Main [leds](https://github.com/MapleLeafMakers/KlipperMacros) to show extruder and bed temperature
-  - Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
-  - Fan control for Octopus - temperature controlled
-  - Fan control for exhaust fan - keeps more stable chamber temp
-  - Thermal expansion compensation from ~~[AlchemyEngine](https://github.com/alchemyEngine/klipper_frame_expansion_comp). Then to query the compensation `QUERY_FRAME_COMP`~~ - now built into Klipper
-  - Simplying MCU klipper updates:
+## Software - many from Andrew Ellis</summary>
+- lcd_tweaks.cfg
+- Github autocommit
+- Change color of Stealthburner and Main [leds](https://github.com/MapleLeafMakers/KlipperMacros) to show extruder and bed temperature
+- Mainsail [timelapse.cfg](https://github.com/mainsail-crew/moonraker-timelapse)
+- Fan control for Octopus - temperature controlled
+- Fan control for exhaust fan - keeps more stable chamber temp
+- Thermal expansion compensation built into Klipper
+- Simplying MCU klipper updates:
 ```
 cd ~/klipper/
 make clean KCONFIG_CONFIG=config.octopus
@@ -96,7 +81,7 @@ sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
 sudo service klipper start
 ```
-  - Then for the BTT EBB CANBus Board (making sure you choose the right version as the CANBus pins have changed between [versions](https://github.com/bigtreetech/EBB))- after setting it up with [CANBoot](https://github.com/Arksine/CanBoot), explained [here](https://www.youtube.com/watch?v=_FELCN8CbWA):
+- Then for the BTT EBB CANBus Board (making sure you choose the right version as the CANBus pins have changed between [versions](https://github.com/bigtreetech/EBB))- after setting it up with [CANBoot](https://github.com/Arksine/CanBoot), explained [here](https://www.youtube.com/watch?v=_FELCN8CbWA):
 ```
 cd ~/klipper/
 make clean KCONFIG_CONFIG=config.ebb
@@ -109,4 +94,4 @@ python3 flash_can.py -i can0 -f ~/klipper/out/klipper.bin -u d3e7f0c00d1a
 - Just remember that sometimes the Pi will not find the MCU after a service stop and new make, requiring a power cycle of the whole system - much time wasted figuring this one out!
 - [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and getr status updates
 - [Klipper adaptive meshing and purging](https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging) which improved single part printing and also replaced my home grown fuzzy purge line and purge bucket macros
-</details>
+
