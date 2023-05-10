@@ -42,6 +42,7 @@
 - Frame thermistor (bare 3950) for doing thermal expansion compensation - mounted rear left, tucked inside the rail and held in with insulating foam so that it gives a good reading of the actual frame and not the (hotter) chamber
 - [BTT Smart Filament Sensor](https://biqu.equipment/products/btt-sfs-v1-0-smart-filament-sensor-detection-stuck-blocking-filament-module) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Empusas/BTT_Filament_Motion_Sensor_Mount) since the run-out sensor currently does not detect jams, which didn't work out well
 - [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
+- Then some nice clips to hold down the cables [here](https://www.printables.com/model/118550-cable-clip-for-2020-extrusion/files), [here](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/evandepol/Voron2.4-Cable-clamps) and [here](https://www.printables.com/en/model/203062-ender-3-2020-extrusion-zip-tie-clips-imported-from/files)
   
 ## Print bed
 - [Purge bucket and brush](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber) but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
