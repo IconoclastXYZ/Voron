@@ -1,11 +1,11 @@
 # My Setup
 ## Base build - Voron V2.4 350mm (with mostly r2 parts)
 ### Formbot 3D kit - supplied to 2.4r1 specs but with
-- hall effect XY endstops
-- z endstop circuit board
-- Phaetus Dragon HF hotend
+- hall effect XY endstops - changed to microswitches for reliability
+- z endstop circuit board - gone with the Voron Tap
+- Phaetus Dragon HF hotend - changed to Phaetus Rapido
 - [BigTreeTech Octopus 1.1](https://www.biqu.equipment/products/bigtreetech-octopus-v1-1)
-- Raspberry Pi 3B+ (1GB RAM)
+- Raspberry Pi 3B+ (1GB RAM) - changed to RPi 4 4GB
 
 ### Printed parts
 - Third party (Etsy) printed parts in ASA to 2.4r1 with a few extra needed for the MGN12H rail
@@ -14,6 +14,7 @@
 
 ## Toolhead
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
+- Phaetus Rapido Plus hotend - with integrated 115W heater and P1000 thermistor
 - [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
 - Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
 - changed to Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
