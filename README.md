@@ -48,6 +48,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - [Variety of Wago mounts](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/LoganFraser/WagoMounts)
 
 ## [Filament settings for the Voron](/filaments/Polymaker-filament-settings.md)
+- Filament dryer (a must!) - [EIBOS 3D Filament Dryer CYCLOPES](https://www.eibos3d.com/cyclopes-detail) - there are quite a few alternatives, but none of them seem to work terribly well. This one regularly gets the filaments down to 20% RH
 - Polymaker Polylite PA6-CF
 - Polymaker Polylite ASA
 - Polymaker Polylite PLA
