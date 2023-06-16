@@ -23,6 +23,7 @@ dtparam=spi=on
 dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 ```
 - With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
+- Or a great complete guide on the BTT EBB36 and U2C process [here](https://github.com/EricZimmerman/VoronTools/blob/main/EBB_CAN.md)
 
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
