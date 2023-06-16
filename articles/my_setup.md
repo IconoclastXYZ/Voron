@@ -54,7 +54,7 @@
 - [Matching skirts with power inlet and filter from Trident design](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Tridentified_V2.4_Power_Inlet)
 - [Raspberry Pi cooling fan](https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html)
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
-- CanBUS adaptor on the Raspberry Pi as described in the section on the [Umbilical Conversion](/Umbilical_conversion.md)
+- CanBUS adaptor on the Raspberry Pi as described in the section on the [Umbilical Conversion](/articles/Umbilical_conversion.md)
 - CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
 - [Raspberry Pi CAN Bus board to go with HUVUD](https://learn.sb-components.co.uk/RS485-CAN-HAT)
 -- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
@@ -66,7 +66,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 - With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
 
 ## Software - many from Andrew Ellis</summary>
-- Start with [MainSail OS](https://docs-os.mainsail.xyz/), which includes all the main software components like Mainsail, Klipper, Moonraker, Crowsnest, Sonar, [Timelapse]((https://github.com/mainsail-crew/moonraker-timelapse) and preinstalls [CanBoot](https://github.com/Arksine/CanBoot)
+- Start with [MainSail OS](https://docs-os.mainsail.xyz/), which includes all the main software components like Mainsail, Klipper, Moonraker, Crowsnest, Sonar, [Timelapse](https://github.com/mainsail-crew/moonraker-timelapse) and preinstalls [CanBoot](https://github.com/Arksine/CanBoot)
 - Setup Github autocommit
 - [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and getr status updates
 - 
