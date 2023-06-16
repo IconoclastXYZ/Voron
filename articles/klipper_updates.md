@@ -2,6 +2,8 @@
 How to update klipper on the different MCUs in the system after updating it on the Raspi
 
 ## Update the controller board
+<img src="/images/KlipperSetup-Octopus.png" width="800">
+
 ```
 cd ~/klipper/
 make clean KCONFIG_CONFIG=config.octopus
