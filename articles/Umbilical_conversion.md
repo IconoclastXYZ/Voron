@@ -8,11 +8,11 @@
 
 ## CanBUS hardware
 - Need a controller board to drive from the Raspi - WaveShare CanBus adaptor
-- Now people recommend the BTT U2C board instead, explained [here](https://wiki.kb-3d.com/home/canbus_guide)
+-- Now people recommend the BTT U2C board instead, explained [here](https://wiki.kb-3d.com/home/canbus_guide)
 
 - And a board on the toolhead - BTT EBB - 36 & 42 versions
-- Ended up using the BTT EBB36 1.2 with a [canbus mount](https://github.com/KayosMaker/CANboard_Mounts)
-- With a great introduction on how to flash the firmware and wire it up [here](https://wiki.kb-3d.com/en/home/btt/voron/BTT_EBB36)
+-- Ended up using the BTT EBB36 1.2 with a [canbus mount](https://github.com/KayosMaker/CANboard_Mounts)
+-- With a great introduction on how to flash the firmware and wire it up [here](https://wiki.kb-3d.com/en/home/btt/voron/BTT_EBB36)
 - Final wiring for the EBB36 board
 <img src="/images/EBB36 Voron wiring 2022-12-29 15_43_52.png" width="600">
 
