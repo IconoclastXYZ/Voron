@@ -16,6 +16,9 @@
 - Final wiring for the EBB36 board
 <img src="/images/EBB36 Voron wiring 2022-12-29 15_43_52.png" width="600">
 
+- To setup the WaveShare RS485-CAN-HAT it is a little complicated, but best described [here](https://github.com/maz0r/klipper_canbus/blob/main/controller/rs485.md)
+- Make sure to choose the same bus speed for the CAN-HAT (suggest 250000) and the EBB36 (when flashing it)
+
 - Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
 ```
 [all]
@@ -24,6 +27,8 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 ```
 - With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
 - Or a great complete guide on the BTT EBB36 and U2C process [here](https://github.com/EricZimmerman/VoronTools/blob/main/EBB_CAN.md)
+
+- Honestly, easier just to use the BTT U2C now - also its interface is much faster than the RS485-CAN-HAT
 
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
