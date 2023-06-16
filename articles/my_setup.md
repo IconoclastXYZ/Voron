@@ -58,8 +58,8 @@
 
 ## Software
 - Start with [MainSail OS](https://docs-os.mainsail.xyz/), which includes all the main software components like Mainsail, Klipper, Moonraker, Crowsnest, Sonar, [Timelapse](https://github.com/mainsail-crew/moonraker-timelapse) and preinstalls [CanBoot](https://github.com/Arksine/CanBoot)
-- [Github autocommit](https://docs.vorondesign.com/community/howto/EricZimmerman/BackupConfigToGithub.html)
-- [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and getr status updates
+- [Github autocommit](https://docs.vorondesign.com/community/howto/EricZimmerman/BackupConfigToGithub.html) to backup the config to GitHub from MainSail
+- [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and get status updates
 - 
 - lcd_tweaks.cfg
 - Change color of Stealthburner and Main [leds](https://github.com/MapleLeafMakers/KlipperMacros) to show extruder and bed temperature
