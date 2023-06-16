@@ -13,6 +13,7 @@ make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_43001100065053
 sudo service klipper start
 ```
 ## Then the BTT EBB CANBus Board 
+<img src="/images/KlipperSetup-EBB36.png" width="800">
 - making sure you choose the right version as the CANBus pins have changed between [versions](https://github.com/bigtreetech/EBB)
 - after setting it up with [CANBoot](https://github.com/Arksine/CanBoot), explained [here](https://www.youtube.com/watch?v=_FELCN8CbWA):
 ```
