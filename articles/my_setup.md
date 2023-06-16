@@ -56,7 +56,7 @@
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
 - CanBUS adaptor on the Raspberry Pi as described in the section on the [Umbilical Conversion](/articles/Umbilical_conversion.md)
 
-## Software - many from Andrew Ellis</summary>
+## Software
 - Start with [MainSail OS](https://docs-os.mainsail.xyz/), which includes all the main software components like Mainsail, Klipper, Moonraker, Crowsnest, Sonar, [Timelapse](https://github.com/mainsail-crew/moonraker-timelapse) and preinstalls [CanBoot](https://github.com/Arksine/CanBoot)
 - [Github autocommit](https://docs.vorondesign.com/community/howto/EricZimmerman/BackupConfigToGithub.html)
 - [Moonraker Telegram integration](https://github.com/Raabi91/moonraker-telegram) to send message to and from the printer and getr status updates
