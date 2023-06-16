@@ -7,14 +7,22 @@
 - Make end mounts for the umbilicus
 
 ## CanBUS hardware
-- Need a controller board to drive from the Raspi - WaveShare CanBus adaptor
+- Need a controller board to drive from the Raspi - [WaveShare CanBus adaptor](https://learn.sb-components.co.uk/RS485-CAN-HAT)
 -- Now people recommend the BTT U2C board instead, explained [here](https://wiki.kb-3d.com/home/canbus_guide)
 
-- And a board on the toolhead - BTT EBB - 36 & 42 versions
+- CAN Bus board from [BigTreeTech](https://www.aliexpress.com/item/1005004243374113.html) with the [GitHub and manual](https://github.com/bigtreetech/EBB/)
 -- Ended up using the BTT EBB36 1.2 with a [canbus mount](https://github.com/KayosMaker/CANboard_Mounts)
 -- With a great introduction on how to flash the firmware and wire it up [here](https://wiki.kb-3d.com/en/home/btt/voron/BTT_EBB36)
 - Final wiring for the EBB36 board
 <img src="/images/EBB36 Voron wiring 2022-12-29 15_43_52.png" width="600">
+
+- Add to /boot/config.txt (note the need for the \[all\] otherwise it can slip under Pi2, Pi3 or Pi4 and not work
+```
+[all]
+dtparam=spi=on
+dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
+```
+- With more info on how to setup CAN Bus [here](https://www.klipper3d.org/CANBUS.html)
 
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
