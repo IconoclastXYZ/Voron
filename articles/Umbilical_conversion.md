@@ -32,7 +32,7 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 
 ### Using the BTT Octopus 1.0/1.1 as the CanBUS
 - Great guide on the Octopus+Pi+2040 from [akhamar](https://github.com/akhamar/voron_canbus_octopus_sb2040)
-- Or a more general guide which came from a source unknown on Facebook with a [PDF]
+- Or a more general guide which came from a source unknown on Facebook with a [PDF](/articles/How%20to%20Use%20CAN%20Toolhead%20Boards%20Connected%20Directly%20to%20Octopus.pdf)
 
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
