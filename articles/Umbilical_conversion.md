@@ -30,6 +30,10 @@ dtoverlay=mcp2515-can0,oscillator=12000000,interrupt=25,spimaxfrequency=2000000
 
 - Honestly, easier just to use the BTT U2C now - also its interface is much faster than the RS485-CAN-HAT
 
+### Using the BTT Octopus 1.0/1.1 as the CanBUS
+- Great guide on the Octopus+Pi+2040 from [akhamar](https://github.com/akhamar/voron_canbus_octopus_sb2040)
+- Or a more general guide which came from a source unknown on Facebook with a [PDF]
+
 ## Moving x-endstop
 - Built-in mount point on the new Stealthburner design
 
