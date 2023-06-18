@@ -1,7 +1,7 @@
 # Simplying MCU klipper updates
 How to update klipper on the different MCUs in the system after updating it on the Raspi
 
-## Update the controller board
+## Update the controller board - when using the WaveShare RS485-CAN-HAT
 <img src="/images/KlipperSetup-Octopus.png" width="800">
 
 ```
@@ -14,6 +14,18 @@ sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
 sudo service klipper start
 ```
+## Update the controller board - when using CanBUS Bridging on the Octopus
+<img src="/images/KlipperSetup-Octopus-CanBUS.png" width="800">
+
+- Once in the CanBUS Bridge mode it cannot be directly flashed with new firmware
+- The instructions [here] and [here] imply that you can trigger it back into CanBoot mode by trying - never worked for me
+- Use the info [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#flashing-images) to reflash CanBoot onto the Octopus
+- Then you can flash the klipper firmware by serial
+```
+cd ~/CanBoot/scripts
+python3 flash_can.py -f ~/firmware/octopus_1.1_klipper.bin -d /dev/serial/by-id/usb-CanBoot_stm32f446xx_430011000650535556323420-if00
+```
+
 ## Then the BTT EBB CANBus Board 
 <img src="/images/KlipperSetup-EBB36.png" width="800">
 
