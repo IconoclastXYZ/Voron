@@ -18,7 +18,7 @@ sudo service klipper start
 <img src="/images/KlipperSetup-Octopus-CanBUS.png" width="800">
 
 - Once in the CanBUS Bridge mode it cannot be directly flashed with new firmware
-- The instructions [here] and [here] imply that you can trigger it back into CanBoot mode by trying - never worked for me
+- The instructions [here](https://klipper.discourse.group/t/octopus-pro-canboot-can-bus-bridge/3734/21?page=2) and [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#update-klipper-on-the-octopus) imply that you can trigger it back into CanBoot mode by trying - never worked for me
 - Use the info [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#flashing-images) to reflash CanBoot onto the Octopus
 - Then you can flash the klipper firmware by serial
 ```
