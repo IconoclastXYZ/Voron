@@ -15,27 +15,15 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 ## [My current setup](https://github.com/IconoclastXYZ/Voron/blob/main/articles/my_setup.md)  
   
 ## ToDo
-- Fix the `controller_fan.py` script so that controller fans do not always come on with any stepper motor
+- Fix the `controller_fan.py` script so that controller fans do not always come on with any stepper motor - to replace the kludge using a fake stepper motor
   
 ## Under consideration
-- [5.5 inch OLED display](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/sttts/Waveshare-5.5-inch-HDMI-AMOLED)
-- Moonraker Telegram plugin to send updates on print status - https://github.com/Raabi91/moonraker-telegram
+- [KlipperScreen](https://klipperscreen.readthedocs.io/en/latest/) using a BigTreeTech PI TFT50 display mounted using [this guide](https://wiki.kb-3d.com/en/home/btt/voron/PITFT50)
 - [Plug panel](https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl) for external connections to the Pi, but need to find out what the holes are sized for?
-- How to [automate Klipper updates](https://docs.vorondesign.com/community/howto/drachenkatze/automating_klipper_mcu_updates.html)
--- For this you will need to add an entry into the `~/klipper/scripts/spi_flash/board_defs.py` file for the BTT Octopus 1.1
-```
-'btt-oct-1.1': {
-        'mcu': "stm32f446xx",
-        'spi_bus': "spi2",
-        "cs_pin": "PC12"
-}
-```
-- Although this method won't work for me. I probably have the pin details wrong for the btt Octopus and anyway, if I edit the file Mainsail shows the klipper install as 'dirty' and if I update klipper it wipes these details.
 - [Full coverage heater pad](https://uniqueprints.shop/shop/buildplate/voron-keenovo-bed-heater-fermio/)
 - [Custom heater plate with slot for top of plate temperature sensor](https://preciseprinterparts.com/voron-cast-aluminum-printer-bed-350mm-vor-ver-24-and-18.html)
 - [Kinematic bed mount](https://github.com/tanaes/whopping_Voron_mods/tree/main/kinematic_bed)
 - [FYSETC ultralight X rail](https://www.aliexpress.us/item/3256804719096286.html) with the appropriate mounting blocks from [here](https://github.com/GiulianoM/Fystec-Voron-X-Block), [here](https://www.thingiverse.com/thing:5671339) or [here](https://www.teamfdm.com/files/file/641-light-x-beam-mounting-block/), with the [M5 heat inserts](https://www.amazon.com/M5x5-8mm-OD7-1mm-Threaded-Plastic-Staking/dp/B08T9W17CR)
-- [Twin fan filter / chamber fan](https://github.com/nateb16/VoronUsers/tree/master/printer_mods/nateb16/THE_FILTER/THE_FILTER_STANDARD_BED_SPACING) possibly better than nevermore, which does not fit my setup
   
 ## Utility and Test prints
 - Voron test cube
