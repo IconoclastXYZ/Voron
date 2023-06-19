@@ -2,6 +2,10 @@
 Your mileage may vary - some of this will probably be very obvious to others (I hope so!)
 
 In no particular order:
+- It is a journey and not a destination - you are never really finished - every Klipper update is an adventure
+- The command prompt is you friend - on your computer, on the Raspi, using Klipper
+- It will almost certainly be cheaper and easier to buy an finished printer (eg Prusa Mk 4 or BambuLabs XC1 or P1P) than to build, mod, fix, rinse and repeat
+
 - ALL the motor directions had to be swapped in the example config file from Voron Design. That's fine, but half of the z-axis motor are opposite directions, so getting them all inverted was not obvious
 - Lubricate the rails prior to installation, seriously
 - Set the z-axis rails just a little more above the bottom (spec'd as 3mm) otherwise fitting the belt covers is a real pain
