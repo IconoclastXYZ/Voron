@@ -15,7 +15,7 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 ## [My current setup](https://github.com/IconoclastXYZ/Voron/blob/main/articles/my_setup.md)  
 
 ## Remember
-- After each toolhead change (nozzle, fan replacement, heater change) run `PROBE_CALIBRATE` and remember to do it at a baked temp (nozzle 240, bed 95) and then do Z -0.1 when happy with the paper test as Klipper assumes you do it [cold](https://docs.vorondesign.com/build/startup/#z-offset-adjustment)
+- After each toolhead change (nozzle, fan replacement, heater change) run `PROBE_CALIBRATE` and remember to do it at a baked temp (nozzle 240, bed 95) and then do `TESTZ Z=-0.1` when happy with the paper test as Klipper assumes you do it [cold](https://docs.vorondesign.com/build/startup/#z-offset-adjustment)
   
 ## ToDo
 - Fix the `controller_fan.py` script so that controller fans do not always come on with any stepper motor - to replace the kludge using a fake stepper motor
