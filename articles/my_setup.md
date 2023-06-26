@@ -30,7 +30,7 @@
 
 ## Chamber
 - Polycarbonate twinwall (8mm) side and top panels ([much better insulation than 3mm acrylic]( https://github.com/IconoclastXYZ/Voron/blob/main/articles/insulation.md))
-- [Quick removable side / top panel latches](https://github.com/richardjm/voron-parts/tree/main/voron-2.4/FilamentLatch)
+- [Quick removable side / top panel clips](https://github.com/Annex-Engineering/Annex-Engineering_User_Mods/tree/main/Printers/All_Printers/annex_dev-Panel_2020_Clips_and_Hinges)
 - [Removeable front hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors) - but use the old engineering trick of a longer screw in the bottom hinge so that they are much easier to get back on
 - [Sturdy handles](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles)
 - LED strip lighting - [stuck to bars](https://www.thingiverse.com/thing:4933314/files)
