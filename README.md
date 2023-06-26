@@ -1,7 +1,9 @@
 # Voron
 Build details, tips, tricks and traps for the 2.4 r1 - r2
 
-<img src="/images/20220413_200053.jpg" width="300">
+<img src="/images/Voron_with_klipperscreen.jpg" width="300">
+Closeup of the active heater with the angled air flow diverter
+<img src="/images/Active_heater_closeup.jpg" width="300">
 
 With a hotmesh from the finished printer
 
