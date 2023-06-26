@@ -11,4 +11,6 @@ For U-values, lower is better
 - 5mm - U-value 4.9
 - Ref: https://www.allplastics.com.au/component/docman/doc_download/93-allplastics-perspex-datasheet-for-glazing-pdf?Itemid=
 
-# I went with the 8mm Polycarbonate Twinwall - affordable, easy to work with (cuts with a craft knife) and mount with thie clips from [Annex Engineering](https://github.com/Annex-Engineering/Annex-Engineering_User_Mods/tree/main/Printers/All_Printers/annex_dev-Panel_2020_Clips_and_Hinges)
+# Final choice...
+- I went with the 8mm Polycarbonate Twinwall - affordable from a hardware store, easy to work with (cuts with a craft knife) and mount with thie clips from [Annex Engineering](https://github.com/Annex-Engineering/Annex-Engineering_User_Mods/tree/main/Printers/All_Printers/annex_dev-Panel_2020_Clips_and_Hinges)
+- Even with the active heating, the outside of the Twinwall panels are cool and the perspex doors are warm/hot
