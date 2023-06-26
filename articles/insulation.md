@@ -2,7 +2,7 @@
 For U-values, lower is better
 
 # Twinwall polycarbonate sheet
--8mm - U-value 3.3
+- 8mm - U-value 3.3
 - 10mm - U-value 2.9
 - Ref: https://vicwest.com/wp-content/uploads/2019/07/SUNLITE_En_Technical_Guide_61353_Web_1.pdf
 
