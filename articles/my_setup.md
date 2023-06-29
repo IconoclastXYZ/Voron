@@ -30,6 +30,7 @@
 
 ## Chamber
 - Polycarbonate twinwall (8mm) side and top panels ([much better insulation than 3mm acrylic]( https://github.com/IconoclastXYZ/Voron/blob/main/articles/insulation.md))
+- Active heating using a [DBK FGC1515.2R CIRRUS 230W Rail 115/230V Heater](https://dbkusa.com/collections/ptc-enclosure-fan-heaters/products/cirrus40?variant=39257500516410), controlled using a second solid state relay
 - [Quick removable side / top panel clips](https://github.com/Annex-Engineering/Annex-Engineering_User_Mods/tree/main/Printers/All_Printers/annex_dev-Panel_2020_Clips_and_Hinges)
 - [Removeable front hinges](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/ElPoPo/RemovableDoors) - but use the old engineering trick of a longer screw in the bottom hinge so that they are much easier to get back on
 - [Sturdy handles](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/jeoje/Sturdy_Handles)
