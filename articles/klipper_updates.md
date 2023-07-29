@@ -25,6 +25,7 @@ sudo dfu-util -a 0 -D ~/firmware/octopus_1.1_canboot.bin --dfuse-address 0x08000
 ```
 - Then you can flash the klipper firmware by serial
 ```
+cd ~/klipper/
 make clean
 make menuconfig
 make
