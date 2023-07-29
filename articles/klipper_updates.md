@@ -18,12 +18,15 @@ sudo service klipper start
 <img src="/images/KlipperSetup-Octopus-CanBUS.png" width="800">
 
 - Once in the CanBUS Bridge mode it cannot be directly flashed with new firmware
-- The instructions [here](https://klipper.discourse.group/t/octopus-pro-canboot-can-bus-bridge/3734/21?page=2) and [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#update-klipper-on-the-octopus) imply that you can trigger it back into CanBoot mode by trying - never worked for me
-- Use the info [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#flashing-images) to reflash CanBoot onto the Octopus - basically switch the DFU jumper and run
+- The instructions [here](https://klipper.discourse.group/t/octopus-pro-canboot-can-bus-bridge/3734/21?page=2) and [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#update-klipper-on-the-octopus) imply that you can trigger it back into CanBoot mode by trying:
+```
+python3 flash_can.py -i can0 -u c4881dcf2900 -f ~/firmware/octopus_1.1_klipper.bin
+```
+- Then flash using the sequence below, otherwise use the info [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#flashing-images) to reflash CanBoot onto the Octopus - basically switch the DFU jumper and run
 ```
 sudo dfu-util -a 0 -D ~/firmware/octopus_1.1_canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11
 ```
-- Then you can flash the klipper firmware by serial
+- Either way, then you can flash the klipper firmware by serial
 ```
 cd ~/klipper/
 make clean
