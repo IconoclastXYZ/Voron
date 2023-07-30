@@ -51,6 +51,7 @@ python3 flash_can.py -f ~/firmware/octopus_1.1_klipper.bin -d /dev/serial/by-id/
 ```
 
 ## Then the BTT EBB CANBus Board - either way, with CANBus bridging or directly with WaveShare or U2C
+## Be sure to choose speed of 1000000 not 250000!!!
 <img src="/images/KlipperSetup-EBB36.png" width="800">
 
 - making sure you choose the right version as the CANBus pins have changed between [versions](https://github.com/bigtreetech/EBB)
