@@ -25,32 +25,8 @@ sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
 sudo service klipper start
 ```
-## Update the controller board - when using CanBUS Bridging on the Octopus
-<img src="/images/KlipperSetup-Octopus-CanBUS.png" width="800">
 
-- Once in the CanBUS Bridge mode it cannot be directly flashed with new firmware
-- The instructions [here](https://klipper.discourse.group/t/octopus-pro-canboot-can-bus-bridge/3734/21?page=2) and [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#update-klipper-on-the-octopus) imply that you can trigger it back into CanBoot mode by trying:
-```
-python3 flash_can.py -i can0 -u c4881dcf2900 -f ~/firmware/octopus_1.1_klipper.bin
-```
-- Then flash using the sequence below, otherwise use the info [here](https://github.com/akhamar/voron_canbus_octopus_sb2040#flashing-images) to reflash CanBoot onto the Octopus - basically switch the DFU jumper and run
-```
-sudo dfu-util -a 0 -D ~/firmware/octopus_1.1_canboot.bin --dfuse-address 0x08000000:force:mass-erase:leave -d 0483:df11
-```
-- Either way, then you can flash the klipper firmware by serial
-```
-cd ~/klipper/
-make clean
-make menuconfig
-make
-
-mv ~/klipper/out/klipper.bin ~/firmware/octopus_1.1_klipper.bin
-
-cd ~/CanBoot/scripts
-python3 flash_can.py -f ~/firmware/octopus_1.1_klipper.bin -d /dev/serial/by-id/usb-CanBoot_stm32f446xx_430011000650535556323420-if00
-```
-
-## Then the BTT EBB CANBus Board - either way, with CANBus bridging or directly with WaveShare or U2C
+## Then the BTT EBB CANBus Board - directly with WaveShare or U2C
 ## Be sure to choose speed of 1000000 not 250000!!!
 <img src="/images/KlipperSetup-EBB36.png" width="800">
 
