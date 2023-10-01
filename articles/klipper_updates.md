@@ -21,6 +21,8 @@ make clean KCONFIG_CONFIG=config.octopus
 make menuconfig KCONFIG_CONFIG=config.octopus
 make KCONFIG_CONFIG=config.octopus
 
+mv ~/klipper/out/klipper.bin ~/firmware/Octopus_1.1_klipper.bin
+
 sudo service klipper stop
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
 sudo service klipper start
