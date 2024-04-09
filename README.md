@@ -23,7 +23,6 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Fix the `controller_fan.py` script so that controller fans do not always come on with any stepper motor - to replace the kludge using a fake stepper motor
   
 ## Under consideration
-- [KlipperScreen](https://klipperscreen.readthedocs.io/en/latest/) using a BigTreeTech PI TFT50 display mounted using [this guide](https://wiki.kb-3d.com/en/home/btt/voron/PITFT50)
 - [Plug panel](https://github.com/tanaes/whopping_Voron_mods/blob/main/side_skirts/STLs/side_skirt-plug_panel-350.stl) for external connections to the Pi, but need to find out what the holes are sized for?
 - [Full coverage heater pad](https://uniqueprints.shop/shop/buildplate/voron-keenovo-bed-heater-fermio/)
 - [Custom heater plate with slot for top of plate temperature sensor](https://preciseprinterparts.com/voron-cast-aluminum-printer-bed-350mm-vor-ver-24-and-18.html)
