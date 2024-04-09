@@ -6,6 +6,7 @@
 - Phaetus Dragon HF hotend - changed to Phaetus Rapido
 - [BigTreeTech Octopus 1.1](https://www.biqu.equipment/products/bigtreetech-octopus-v1-1)
 - Raspberry Pi 3B+ (1GB RAM) - changed to RPi 4 4GB
+- [KlipperScreen](https://klipperscreen.readthedocs.io/en/latest/) using a BigTreeTech PI TFT50 display mounted using [this guide](https://wiki.kb-3d.com/en/home/btt/voron/PITFT50)
 
 ### Printed parts
 - Third party (Etsy) printed parts in ASA to 2.4r1 with a few extra needed for the MGN12H rail
@@ -19,6 +20,7 @@
 - Changing to an [umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
 - changed to Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
 - 3 wire hotend fan with [RPM monitoring](https://www.klipper3d.org/Config_Reference.html#heater_fan) and using the guide from Andrew Ellis and the linked [macro](https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/hotend_fan_monitoring.html), with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/), which explained why the first time I did it it blew the BTT EBB36 board. Now it has a signal diode inline with the endstop pin. Otherwise, the endstop supplies 7.8mA constantly, which is enough to drive the fan. A 5K resister drops this to 1.8mA but it then does not sense rotation.
+- [Bowden tube support, doubling as CANBus support](https://github.com/Exerqtor/Voron/tree/main/Mods/trident_ptfe_support-v2)
 
 ## Print axes
 - MGN12H single X rail with reprinted parts to suit
@@ -45,6 +47,7 @@
 - [BTT Smart Filament Sensor](https://biqu.equipment/products/btt-sfs-v1-0-smart-filament-sensor-detection-stuck-blocking-filament-module) and [mount](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/Empusas/BTT_Filament_Motion_Sensor_Mount) since the run-out sensor currently does not detect jams, which didn't work out well
 - [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
 - Then some nice clips to hold down the cables [here](https://www.printables.com/model/118550-cable-clip-for-2020-extrusion/files), [here](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/evandepol/Voron2.4-Cable-clamps) and [here](https://www.printables.com/en/model/203062-ender-3-2020-extrusion-zip-tie-clips-imported-from/files)
+- [Exhaust grill with notched exit for ease of cable entry](https://www.printables.com/model/366499-voron-24-canbus-umbilical/files)
   
 ## Print bed
 - [Purge bucket and brush](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber) but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
@@ -56,6 +59,7 @@
 - [Raspberry Pi cooling fan](https://core-electronics.com.au/pimoroni-fan-shim-for-raspberry-pi.html)
 - [Improved Raspberry Pi mount](https://github.com/MotorDynamicsLab/LDOVoron2/blob/main/STLs/beefy_raspberry_bracket.stl), needs extra [DIN mount](https://github.com/VoronDesign/Voron-2/blob/Voron2.4/STLs/Electronics_Bay/pcb_din_clip_x3.stl)
 - CanBUS adaptor on the Raspberry Pi as described in the section on the [Umbilical Conversion](/articles/Umbilical_conversion.md)
+- [Notched rear skirt for cable entry](https://www.printables.com/model/463756-voron-24r2-300mm-back-center-skirt-with-cable-hole/files)
 
 ## Software
 - Start with [MainSail OS](https://docs-os.mainsail.xyz/), which includes all the main software components like Mainsail, Klipper, Moonraker, Crowsnest, Sonar, [Timelapse](https://github.com/mainsail-crew/moonraker-timelapse) and preinstalls [CanBoot](https://github.com/Arksine/CanBoot)
