@@ -33,7 +33,8 @@ Lots of others build lists and hints exist, with my particular blind spots / lea
 - Voron test cube
 - [Andrew Ellis print tuning guide and parts](https://ellis3dp.com/Print-Tuning-Guide/)
 - [Eric Zimmerman setup guides and Voron config](https://github.com/EricZimmerman/VoronTools)
-- Filament swatches - https://www.printables.com/model/27814
+- [X-rail belt clamps for installing the toolhead easily](https://www.printables.com/model/714602-voron24trident-ab-belt-clamps-reoriented-and-holes/files)
+- [Filament swatches](https://www.printables.com/model/27814)
 - [Bridging tests](https://www.thingiverse.com/thing:476845/files)
 - [Temperature tower models](https://www.thingiverse.com/thing:2729076)
 - [Hot end flow test generator](https://hotend-flow-tester.netlify.app/)
