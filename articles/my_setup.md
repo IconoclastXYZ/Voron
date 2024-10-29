@@ -49,6 +49,8 @@
 - [Side entry for filament](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/120decibell/exhaust_housing_side_entry) which makes for a much better path paird with the BTT smart filament sensor, above
 - Then some nice clips to hold down the cables [here](https://www.printables.com/model/118550-cable-clip-for-2020-extrusion/files), [here](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/evandepol/Voron2.4-Cable-clamps) and [here](https://www.printables.com/en/model/203062-ender-3-2020-extrusion-zip-tie-clips-imported-from/files)
 - [Exhaust grill with notched exit for ease of cable entry](https://www.printables.com/model/366499-voron-24-canbus-umbilical/files)
+- [A new purge bucket](https://www.printables.com/model/465418-purge-bucket-with-editable-size-and-tilt-angle/files)
+- [Mount for the Bamboo Labs silicone brush](https://www.printables.com/model/786705-voron-24-nozzle-brush-using-bambu-labs-a1-silicone) 
   
 ## Print bed
 - [Purge bucket and brush](https://github.com/VoronDesign/VoronUsers/tree/master/printer_mods/edwardyeeks/Decontaminator_Purge_Bucket_&_Nozzle_Scrubber) but also print the individual sheetstop and it is easy to get your magnetic print plate in the right place every time
