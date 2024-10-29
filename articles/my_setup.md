@@ -23,6 +23,10 @@
 - 3 wire hotend fan with [RPM monitoring](https://www.klipper3d.org/Config_Reference.html#heater_fan) and using the guide from Andrew Ellis and the linked [macro](https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/hotend_fan_monitoring.html), with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/), which explained why the first time I did it it blew the BTT EBB36 board. Now it has a signal diode inline with the endstop pin. Otherwise, the endstop supplies 7.8mA constantly, which is enough to drive the fan. A 5K resister drops this to 1.8mA but it then does not sense rotation.
 - [Bowden tube support, doubling as CANBus support](https://github.com/Exerqtor/Voron/tree/main/Mods/trident_ptfe_support-v2)
 
+- Completely reworked the toolhead
+- [DragonBurner](https://github.com/chirpy2605/voron/tree/main/V0/Dragon_Burner)
+- Still using the [Orbiter 2.0](https://www.orbiterprojects.com/orbiter-v2-0/) and now the [Sensor v2](https://www.orbiterprojects.com/smart-sensor-for-orbiter-v2/) instead of the BTT runout sensor
+
 ## Print axes
 - MGN12H single X rail with reprinted parts to suit
 - [Z axis tension mod from Edward Yeeks](https://github.com/edwardyeeks/VoronUsers/tree/master/printer_mods/edwardyeeks/V2.4_z_drive_motor_tensioner_mod)
