@@ -22,6 +22,11 @@
 - [DragonBurner](https://github.com/chirpy2605/voron/tree/main/V0/Dragon_Burner)
 - Using the [Orbiter 2.0](https://www.orbiterprojects.com/orbiter-v2-0/) and now the [Sensor v2](https://www.orbiterprojects.com/smart-sensor-for-orbiter-v2/) instead of the BTT runout sensor
 - Upgraded the Orbiter to v2.5 with new extruder components
+- Controller board - [Orbitool O2S](https://github.com/RobertLorincz/Orbiter-Toolboards/tree/main/Orbiter%20O2S%20Toolboard)
+<img src="/images/Orbitool O2S Pinout.jpg" width="400">
+Orbitool O2S board pinout
+
+
 
 ### Previous setups
 - Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
