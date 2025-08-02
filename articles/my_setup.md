@@ -14,18 +14,21 @@
 - Quite a few other parts from r2 can be printed for r1 kits and only improve them, eg. z-axis and ab-axis idlers, all the skirts, all electronics mounts
 
 ## Toolhead
-- Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
+### Current setup
 - Phaetus Rapido Plus hotend - with integrated 115W heater and P1000 thermistor
-- [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
-- Changing to [Beacon 3D - rev H](https://beacon3d.com/) eddy current probe with [this setup](https://docs.beacon3d.com/quickstart/)
+- [Beacon 3D - rev H](https://beacon3d.com/) eddy current probe with [this setup](https://docs.beacon3d.com/quickstart/)
 - [Umbilicus](https://github.com/IconoclastXYZ/Voron/blob/main/articles/Umbilical_conversion.md)
-- Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
-- 3 wire hotend fan with [RPM monitoring](https://www.klipper3d.org/Config_Reference.html#heater_fan) and using the guide from Andrew Ellis and the linked [macro](https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/hotend_fan_monitoring.html), with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/), which explained why the first time I did it it blew the BTT EBB36 board. Now it has a signal diode inline with the endstop pin. Otherwise, the endstop supplies 7.8mA constantly, which is enough to drive the fan. A 5K resister drops this to 1.8mA but it then does not sense rotation.
 - [Bowden tube support, doubling as CANBus support](https://github.com/Exerqtor/Voron/tree/main/Mods/trident_ptfe_support-v2)
-
-- Completely reworked the toolhead
 - [DragonBurner](https://github.com/chirpy2605/voron/tree/main/V0/Dragon_Burner)
-- Still using the [Orbiter 2.0](https://www.orbiterprojects.com/orbiter-v2-0/) and now the [Sensor v2](https://www.orbiterprojects.com/smart-sensor-for-orbiter-v2/) instead of the BTT runout sensor
+- Using the [Orbiter 2.0](https://www.orbiterprojects.com/orbiter-v2-0/) and now the [Sensor v2](https://www.orbiterprojects.com/smart-sensor-for-orbiter-v2/) instead of the BTT runout sensor
+- Upgraded the Orbiter to v2.5 with new extruder components
+
+### Previous setups
+- Stealthburner and clockwork 2 - https://vorondesign.com/voron_stealthburner using and LDO motor
+- [Voron Tap](https://github.com/VoronDesign/Voron-Tap) endstop and z-probe
+- 3 wire hotend fan with [RPM monitoring](https://www.klipper3d.org/Config_Reference.html#heater_fan) and using the guide from Andrew Ellis and the linked [macro](https://ellis3dp.com/Print-Tuning-Guide/articles/useful_macros/hotend_fan_monitoring.html), with more info [here](https://forum.vorondesign.com/threads/ebb36-3-wire-fan-speed.83/), which explained why the first time I did it it blew the BTT EBB36 board. Now it has a signal diode inline with the endstop pin. Otherwise, the endstop supplies 7.8mA constantly, which is enough to drive the fan. A 5K resister drops this to 1.8mA but it then does not sense rotation.
+- Orbiter 2.0 extruder and used this [modified stealthburner cover](https://www.printables.com/model/345237-voron-stealthburner-orbiter-v20/files) and [mount](https://github.com/sneakytreesnake/StealthOrbiter) and [this](https://www.printables.com/model/316984-ebb36-mount-with-cable-strain-relief-for-the-orbit) or [this]() mount for the EBB36 board. Alternatively use [this](https://github.com/elcrni/Voron-Mods/tree/main/Orbiter_2.0_SB_CW2_Enclosed) enclosed cover
+- Controller board - [BTT EBB36](https://github.com/bigtreetech/EBB/tree/master/EBB%20CAN%20V1.1%20and%20V1.2%20(STM32G0B1))
 
 ## Print axes
 - MGN12H single X rail with reprinted parts to suit
