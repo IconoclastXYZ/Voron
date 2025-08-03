@@ -1,6 +1,49 @@
 # Simplying MCU klipper updates
 How to update klipper on the different MCUs in the system after updating it on the Raspi
 
+
+
+## Update the controller board - BTT Octopus 1.1
+<img src="/images/KlipperSetup-Octopus.png" width="800">
+
+```
+cd ~/klipper/
+make clean KCONFIG_CONFIG=config.octopus
+make menuconfig KCONFIG_CONFIG=config.octopus
+make KCONFIG_CONFIG=config.octopus
+
+sudo service klipper stop
+make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_Octopus1_1-if00
+sudo service klipper start
+```
+
+## Update the Toolhead board - Orbitool O2S
+<img src="/images/klipper_orbitool_o2s.png" width="800">
+
+```
+cd ~/klipper/
+make clean KCONFIG_CONFIG=config.orbitool
+make menuconfig KCONFIG_CONFIG=config.orbitool
+make KCONFIG_CONFIG=config.orbitool
+
+sudo service klipper stop
+make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f072xb_Orbitool_O2S-if00
+sudo service klipper start
+```
+
+## If these methods do not work...
+You might need to put the Octopus into DFU mode using the onboard jumper - https://www.sanketsjournal.com/articles/20240303-flashing-btt-octopus-pro-with-klipper-using-pi
+
+Look for devices to flash using `lsusb` and when they are flashed `ls /dev/serial/by-id`
+Then flash them with either:
+`make flash FLASH_DEVICE=0483:df11` (if from DFU mode)
+`make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f072xb_Orbitool_O2S-if00` (if in normal mode)
+
+More details on the Orbitool flashing are [here](file:///D:/Download/Orbitool%20O2S%20User%20Manual.pdf)
+
+# Historical approach
+When I was using CanBUS to communicate with the toolhead
+
 ## Learning points...
 - I started the CANBus journey with the WaveShare RS485-CAN-HAT and although there are comments to the contrary it worked well and was stable, with a bus speed of 250000 bps (baud)
 - I needed to change away from the WaveShare as I wanted to install the KlipperScreen mod, and the Waveshare board neatly part covers the screen connector on the RasPi
@@ -11,23 +54,6 @@ How to update klipper on the different MCUs in the system after updating it on t
 - Problem comes when you want to update Klipper as it cannot be done directly over serial as before since the Octopus is not directly connected to the RasPi, but rather through CANBus. Therefore a *bunch* of solutions are proposed on the internet to work around this, double tap the reset button, suspend Klipper startup _just_ as the RasPi starts, etc. None worked reliably for me. In the end, lift up the printer, connect the jumper across the boot pins, restart the printer, reinstall CanBoot, then reinstall Klipper. Yuck!
 - After doing that a few times, then having the EBB no longer be found it was too much, so off to BTT U2C school. This little controller is cheap, but the current version has PROBLEMS and I eventually found this guide from [Eric Zimmerman](https://github.com/EricZimmerman/VoronTools/blob/main/EBB_CAN.md) on how to perform the necessary miracles and make it work.
 - Of course it hard coded firmware from BTT has a bus speed of 1000000, so a few long USB cables later, the EBB36 is reflashed with CanBoot and Klipper and everything is talking again.
-
-## Update the controller board - when using the WaveShare RS485-CAN-HAT or BTT U2C board
-<img src="/images/KlipperSetup-Octopus.png" width="800">
-
-```
-cd ~/klipper/
-make clean KCONFIG_CONFIG=config.octopus
-make menuconfig KCONFIG_CONFIG=config.octopus
-make KCONFIG_CONFIG=config.octopus
-
-sudo service klipper stop
-make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_430011000650535556323420-if00
-sudo service klipper start
-
-#or if it fails then use
-make flash FLASH_DEVICE=/dev/serial/by-id/usb-CanBoot_stm32f446xx_430011000650535556323420-if00
-```
 
 ## Then the BTT EBB CANBus Board - directly with WaveShare or U2C
 ## Be sure to choose speed of 1000000 not 250000!!!
